@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reinforcement Learning | YIMING LI</title>
+    <link>/tags/reinforcement-learning/</link>
+      <atom:link href="/tags/reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>Reinforcement Learning</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©</copyright><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Reinforcement Learning</title>
+      <link>/tags/reinforcement-learning/</link>
+    </image>
+    
+    <item>
+      <title>Fighting Game AI Competition (Reinforcement Learning　Course Final Project.)</title>
+      <link>/project/fighting-game-ai-competition/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/fighting-game-ai-competition/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
