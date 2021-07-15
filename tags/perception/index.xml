@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Robot | YIMING LI</title>
-    <link>/tags/robot/</link>
-      <atom:link href="/tags/robot/index.xml" rel="self" type="application/rss+xml" />
-    <description>Robot</description>
+    <title>Perception | YIMING LI</title>
+    <link>/tags/perception/</link>
+      <atom:link href="/tags/perception/index.xml" rel="self" type="application/rss+xml" />
+    <description>Perception</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©</copyright><lastBuildDate>Fri, 09 Jul 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
-      <title>Robot</title>
-      <link>/tags/robot/</link>
+      <title>Perception</title>
+      <link>/tags/perception/</link>
     </image>
     
     <item>
@@ -26,15 +26,6 @@
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       <guid>/project/pace-competition/</guid>
       <description>&lt;p&gt;PACE is an international collaborative competition. We took part in the PACE 2018 Global Annual Forum with excellent team mate from TU Darmstadt and Tu Turin, and won the First Prize. In the PUMA project, our intelligent Portable Electrical Bicycle (PEB) aimed to improve the short-range transportation in urban life and I built the driving control module for it. In PACE team, I took the responsibility of the electronic control, and mainly worked on the driven control system. To further endow PEB with the ability to perceive the visual world, I developed a vision module to detect humans for autonomous following.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Real-time Remote Control UR5 Robot with DLR Dexterous Hand</title>
-      <link>/project/real-time-remote-control-ur5-robot-with-dlr-dexterous-hand/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/real-time-remote-control-ur5-robot-with-dlr-dexterous-hand/</guid>
-      <description>&lt;p&gt;This is a remote control demo for our DLR dexterous hand with UR5 robot.&lt;/p&gt;
 </description>
     </item>
     

@@ -13,11 +13,12 @@
     </image>
     
     <item>
-      <title>Fighting Game AI Competition (Reinforcement Learning　Course Final Project.)</title>
+      <title>FightingICE Game AI Competition</title>
       <link>/project/fighting-game-ai-competition/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       <guid>/project/fighting-game-ai-competition/</guid>
-      <description></description>
+      <description>&lt;p&gt;FightingICE is a challenging fighting game Fighting game that requires the player to decide an action to perform among many actions. We developed several RL-based agents (DQN, Double DQN, Proiritized DQN, Dueling DQN, ACKTR, etc.) to fight against existing opponents. Our ACKTR algorithm achieved 50% win rate after 550 episodes and over 90% win rate after 1000 trainings. We further improved the algorithm by predicting the next action of the opponent through a three-layer network, which only took 500 episodes to achieve a 90 winning rate. Details stated in video.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

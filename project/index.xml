@@ -21,11 +21,12 @@
     </item>
     
     <item>
-      <title>Fighting Game AI Competition (Reinforcement Learning　Course Final Project.)</title>
+      <title>FightingICE Game AI Competition</title>
       <link>/project/fighting-game-ai-competition/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       <guid>/project/fighting-game-ai-competition/</guid>
-      <description></description>
+      <description>&lt;p&gt;FightingICE is a challenging fighting game Fighting game that requires the player to decide an action to perform among many actions. We developed several RL-based agents (DQN, Double DQN, Proiritized DQN, Dueling DQN, ACKTR, etc.) to fight against existing opponents. Our ACKTR algorithm achieved 50% win rate after 550 episodes and over 90% win rate after 1000 trainings. We further improved the algorithm by predicting the next action of the opponent through a three-layer network, which only took 500 episodes to achieve a 90 winning rate. Details stated in video.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -53,7 +54,7 @@
       <guid>/project/robomaster-competition/</guid>
       <description>&lt;p&gt;I joined Super Power Robot Team for the national mobile robot competition, RoboMaster, and developed a embedded control system of infantry robots.  The control system of infantry robot contains chassis control and gimbal control. For the chassis control, four servo motors were mounted on Mecanum wheels to drive the omnidirectional movement of the chassis. For the gimbal control, we adopted IMU to calculate the pose of the gimbal, and two servos  were used to control Pitch axis and Yaw axis, respectively. Two friction wheel motors are also used to speed up bullets for shooting.&lt;/p&gt;
 &lt;p&gt;The whole robot communicated through CAN bus, and can be controlled by keyboard, mouse or remote control.&lt;/p&gt;
-&lt;p&gt;To further improve the performance of infantry robots, we also adopted  learning-based vision methods to detect the armor plate of enemy robots and autonomously shoot, which played an important role in the battle.&lt;/p&gt;
+&lt;p&gt;To further improve the performance of infantry robots, we also adopted  learning-based vision methods to detect the armor plate of enemy robots and autonomously shoot, which played an important role in the competition.&lt;/p&gt;
 &lt;p&gt;Our team won the First Prize both in divisional competition and final competition in 2018.&lt;/p&gt;
 </description>
     </item>

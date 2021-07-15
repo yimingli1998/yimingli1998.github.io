@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Manipulation | YIMING LI</title>
+    <link>/tags/manipulation/</link>
+      <atom:link href="/tags/manipulation/index.xml" rel="self" type="application/rss+xml" />
+    <description>Manipulation</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©</copyright><lastBuildDate>Fri, 09 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Manipulation</title>
+      <link>/tags/manipulation/</link>
+    </image>
+    
+    <item>
+      <title>6-DoF Robotic Grasp Pose Estimation</title>
+      <link>/project/6-dof-robotic-grasp-pose-estimation/</link>
+      <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>/project/6-dof-robotic-grasp-pose-estimation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Real-time Remote Control UR5 Robot with DLR Dexterous Hand</title>
+      <link>/project/real-time-remote-control-ur5-robot-with-dlr-dexterous-hand/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/real-time-remote-control-ur5-robot-with-dlr-dexterous-hand/</guid>
+      <description>&lt;p&gt;This is a remote control demo for our DLR dexterous hand with UR5 robot.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
