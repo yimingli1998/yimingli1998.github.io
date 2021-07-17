@@ -41,29 +41,59 @@
     <loc>/tags/</loc>
     <lastmod>2021-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url><url>
-    <loc>/authors/admin/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/publication_types/3/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/publication/preprint/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+    <loc>/publication_types/1/</loc>
+    <lastmod>2021-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/authors/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+    <lastmod>2021-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/authors/lei-li/</loc>
+    <lastmod>2021-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/authors/peng-wang/</loc>
+    <lastmod>2021-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publication_types/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+    <lastmod>2021-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/publication/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+    <lastmod>2021-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/authors/ruihang-chu/</loc>
+    <lastmod>2021-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publication/sscl-grasp/</loc>
+    <lastmod>2021-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/source-themes/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+    <lastmod>2021-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/authors/tao-kong/</loc>
+    <lastmod>2021-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/authors/yifeng-li/</loc>
+    <lastmod>2021-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/authors/yiming-li/</loc>
+    <lastmod>2021-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/publication/acdl/</loc>
+    <lastmod>2021-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/authors/chenlin-zhou/</loc>
+    <lastmod>2021-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/authors/haonan-duan/</loc>
+    <lastmod>2021-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/authors/jiayuan-liu/</loc>
+    <lastmod>2021-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/authors/xiaofei-shen/</loc>
+    <lastmod>2021-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/courses/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url><url>
     <loc>/slides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
@@ -86,20 +116,7 @@
     <loc>/project/robomaster-competition/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/publication_types/2/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/publication/journal-article/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/authors/robert-ford/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/publication_types/1/</loc>
-    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/publication/conference-paper/</loc>
-    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+    <loc>/authors/admin/</loc>
   </url><url>
     <loc>/post/getting-started-copy/</loc>
   </url><url>

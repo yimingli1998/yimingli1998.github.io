@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>1 | YIMING LI</title>
-    <link>/publication_types/1/</link>
-      <atom:link href="/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
-    <description>1</description>
+    <title>Ruihang Chu | YIMING LI</title>
+    <link>/authors/ruihang-chu/</link>
+      <atom:link href="/authors/ruihang-chu/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ruihang Chu</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©</copyright><lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
-      <title>1</title>
-      <link>/publication_types/1/</link>
+      <title>Ruihang Chu</title>
+      <link>/authors/ruihang-chu/</link>
     </image>
     
     <item>
@@ -17,14 +17,6 @@
       <link>/publication/sscl-grasp/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
       <guid>/publication/sscl-grasp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ADEL: Autonomous Developmental Evolutionary Learning for Robotic Manipulation</title>
-      <link>/publication/acdl/</link>
-      <pubDate>Tue, 15 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>/publication/acdl/</guid>
       <description></description>
     </item>
     
