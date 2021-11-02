@@ -21,11 +21,11 @@
     </item>
     
     <item>
-      <title>Real-time Remote Control UR5 Robot with DLR Dexterous Hand</title>
-      <link>/project/real-time-remote-control-ur5-robot-with-dlr-dexterous-hand/</link>
+      <title>HIT DLR hand teleoperation</title>
+      <link>/project/-hit-dlr-hand-teleoperation/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/real-time-remote-control-ur5-robot-with-dlr-dexterous-hand/</guid>
-      <description>&lt;p&gt;We developed a real-time control system to driven our UR5 robot and DLR hand to imitate the movement of a human&amp;rsquo;s hand. The hand data (poses, finger joints, etc.) of humans were collected by a data glove. We successfully control the hand-arm robot to　finish several complex manipulation tasks. In the future work, we will focus on imitation learning to make our robot learn manipulation skills from teaching data and transfer it to the real world.&lt;/p&gt;
+      <guid>/project/-hit-dlr-hand-teleoperation/</guid>
+      <description>&lt;p&gt;We developed a　teleoperation system to drive our UR5 robot as well as HIT DLR hand to imitate the movement of a human&amp;rsquo;s hand. The hand data (poses, finger joints, etc.) of humans are collected by a data glove. We successfully control the hand-arm robot to　finish several complex manipulation tasks. In the future work, we will focus on imitation learning to make our robot learn manipulation skills from teaching data and transfer it to the real world.&lt;/p&gt;
 </description>
     </item>
     
