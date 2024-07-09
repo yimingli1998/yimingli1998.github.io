@@ -31,7 +31,7 @@ My research interests lie in robot manipulation and interaction with humans in c
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">RSS 2024</div><img src='images/ppSDF.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">RSS 2024</div><img src='images/ppSDF.png' alt="sym" width="60%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Configuration Space Distance Fields for Manipulation Planning**
