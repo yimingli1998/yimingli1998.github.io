@@ -37,7 +37,7 @@ My research interests lie in robot manipulation and interaction with humans in c
 
 - *2022.01*: &nbsp; Our paper about [anthropomorphic hand grasping in clutter](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9811756) is accepted to ICRA 2022!
 
-- *2021.07*: &nbsp; Our paper [6-DoF grasp pose estimation](https://arxiv.org/pdf/2108.02425) is accepted to IROS 2022!
+- *2021.07*: &nbsp; Our paper about [6-DoF grasp pose estimation](https://arxiv.org/pdf/2108.02425) is accepted to IROS 2022!
 
 # 📝 Selected Publications 
 
@@ -75,7 +75,7 @@ In Proc. Robotics: Science and Systems 2024 (RSS 2024).
 
 Ante Marić, **Yiming Li**, Sylvain Calinon
 
-In IEEE Robotics and Automation Letters (RA-L), 9 (6), 6020-6026.
+IEEE Robotics and Automation Letters (RA-L), 9 (6), 6020-6026.
 
 [[paper]](https://arxiv.org/pdf/2307.00533)[[website]](https://sites.google.com/view/pp-sdf)
 </div>
@@ -133,7 +133,7 @@ In Proc. IEEE Intl Conf. on Robotics and Automation 2022 (ICRA 2022).
 
 Hoanan Duan, Peng Wang, **Yiming Li**, Daheng Li, Wei Wei
 
-In IEEE Transactions on Cognitive and Developmental Systems(T-CDS) 15 (3), 1224-1238.
+IEEE Transactions on Cognitive and Developmental Systems(T-CDS) 15 (3), 1224-1238.
 
 [[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9870872)
 </div>
@@ -152,7 +152,7 @@ In IEEE Transactions on Cognitive and Developmental Systems(T-CDS) 15 (3), 1224-
 
 Wei Wei, Daheng Li, Peng Wang, **Yiming Li**, Wanyi Li,Yongkang Luo, Jun Zhong
 
-In IEEE Robotics and Automation Letters (RA-L) 7 (2), 1659-1666.
+IEEE Robotics and Automation Letters (RA-L) 7 (2), 1659-1666.
 
 [[paper]](https://arxiv.org/pdf/2211.11154)
 </div>
