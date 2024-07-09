@@ -46,7 +46,7 @@ Please visit my [Google Scholar](https://scholar.google.com/citations?user=j9DxN
 <div class='paper-box'>
 <div class='paper-box-image'>
   <div>
-    <img src='images/ppSDF.png' alt="sym" width="80%">
+    <img src='images/CDF.png' alt="sym" width="80%">
     </div>
   </div>
 <div class='paper-box-text' markdown="1">
@@ -90,6 +90,7 @@ In IEEE Robotics and Automation Letters (RA-L), 9 (6), 6020-6026.
     </div>
   </div>
 <div class='paper-box-text' markdown="1">
+
 **Representing Robot Geometry as Distance Fields: Applications to Whole-body Manipulation**
 
 **Yiming Li**, Yan Zhang, Amirreza Razmjoo, Sylvain Calinon
@@ -109,7 +110,7 @@ In Proc. IEEE Intl Conf. on Robotics and Automation 2024 (ICRA 2024).
   </div>
 <div class='paper-box-text' markdown="1">
 
-**HGC-Net: Deep anthropomorphic hand grasping in clutter**
+**HGC-Net: Deep Anthropomorphic Hand Grasping in Clutter**
 
 **Yiming Li**, Wei Wei, Daheng Li, Peng Wang, Wanyi Li, Jun Zhong
 
@@ -128,7 +129,7 @@ In Proc. IEEE Intl Conf. on Robotics and Automation 2022 (ICRA 2022).
   </div>
 <div class='paper-box-text' markdown="1">
 
-**Learning human-to-robot dexterous handovers for anthropomorphic hand**
+**Learning Human-to-robot Dexterous Handovers for Anthropomorphic Hand**
 
 Hoanan Duan, Peng Wang, **Yiming Li**, Daheng Li, Wei Wei
 
@@ -147,7 +148,7 @@ In IEEE Transactions on Cognitive and Developmental Systems(T-CDS) 15 (3), 1224-
   </div>
 <div class='paper-box-text' markdown="1">
 
-**DVGG: Deep variational grasp generation for dextrous manipulation**
+**DVGG: Deep Variational Grasp Generation for Dextrous Manipulation**
 
 Wei Wei, Daheng Li, Peng Wang, **Yiming Li**, Wanyi Li,Yongkang Luo, Jun Zhong
 
@@ -166,7 +167,7 @@ In IEEE Robotics and Automation Letters (RA-L) 7 (2), 1659-1666.
   </div>
 <div class='paper-box-text' markdown="1">
 
-**Simultaneous semantic and collision learning for 6-dof grasp pose estimation**
+**Simultaneous Semantic and Collision Learning for 6-dof Grasp Pose Estimation**
 
  **Yiming Li**, Tao Kong, Ruihang Chu, Yifeng Li, Peng Wang, Lei Li
 
