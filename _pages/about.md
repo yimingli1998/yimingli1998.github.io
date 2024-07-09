@@ -31,7 +31,7 @@ My research interests lie in robot manipulation and interaction with humans in c
 
 # 📝 Publications 
 
-<div class='paper-box' style='margin-bottom: 0; padding-bottom: 0;'><div class='paper-box-image'><div><div class="badge" style='margin-bottom: 0; padding-bottom: 0;'>RSS 2024</div><img src='images/CDF.png' alt="sym" width="30%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">RSS 2024</div><img src='images/CDF.png' alt="sym" width="30%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Configuration Space Distance Fields for Manipulation Planning**
@@ -46,7 +46,12 @@ In Proc. Robotics: Science and Systems 2024 (RSS 2024).
 
 <!--  -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">RA-L</div><img src='images/ppSDF.png' alt="sym" width="50%"></div></div>
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <img src='images/CDF.png' alt="sym" width="30%">
+    </div>
+  </div>
 <div class='paper-box-text' markdown="1">
 
 **Online Learning of Continuous Signed Distance Fields Using Piecewise Polynomials**
@@ -61,9 +66,13 @@ In IEEE Robotics and Automation Letters (RA-L).
 
 <!--  -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICRA 2024</div><img src='images/RDF.png' alt="sym" width="50%"></div></div>
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <img src='images/RDF.png' alt="sym" width="30%">
+    </div>
+  </div>
 <div class='paper-box-text' markdown="1">
-
 **Representing Robot Geometry as Distance Fields: Applications to Whole-body Manipulation**
 
 **Yiming Li**, Yan Zhang, Amirreza Razmjoo, Sylvain Calinon
@@ -76,7 +85,12 @@ In Proc. IEEE Intl Conf. on Robotics and Automation 2024 (ICRA 2024).
 
 <!--  -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICRA 2024</div><img src='images/RDF.png' alt="sym" width="50%"></div></div>
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <img src='images/ppSDF.png' alt="sym" width="30%">
+    </div>
+  </div>
 <div class='paper-box-text' markdown="1">
 
 **Representing Robot Geometry as Distance Fields: Applications to Whole-body Manipulation**
