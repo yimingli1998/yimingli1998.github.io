@@ -57,7 +57,7 @@ Please visit my [Google Scholar](https://scholar.google.com/citations?user=j9DxN
 
 In Proc. Robotics: Science and Systems 2024 (RSS 2024).
 
-[[arxiv]](https://arxiv.org/pdf/2406.01137)[[website]](https://sites.google.com/view/cdfmp)
+[[paper]](https://arxiv.org/pdf/2406.01137)[[website]](https://sites.google.com/view/cdfmp)
 </div>
 </div>
 
@@ -75,9 +75,9 @@ In Proc. Robotics: Science and Systems 2024 (RSS 2024).
 
 Ante Marić, **Yiming Li**, Sylvain Calinon
 
-In IEEE Robotics and Automation Letters (RA-L).
+In IEEE Robotics and Automation Letters (RA-L), 9 (6), 6020-6026.
 
-[[arxiv]](https://arxiv.org/pdf/2307.00533)[[website]](https://sites.google.com/view/pp-sdf)
+[[paper]](https://arxiv.org/pdf/2307.00533)[[website]](https://sites.google.com/view/pp-sdf)
 </div>
 </div>
 
@@ -96,10 +96,85 @@ In IEEE Robotics and Automation Letters (RA-L).
 
 In Proc. IEEE Intl Conf. on Robotics and Automation 2024 (ICRA 2024).
 
-[[arxiv]](https://arxiv.org/pdf/2401.07698)[[website]](https://sites.google.com/view/lrdf)
+[[paper]](https://arxiv.org/pdf/2401.07698)[[website]](https://sites.google.com/view/lrdf)
 </div>
 </div>
 
+<!--  -->
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <img src='images/hgcnet.png' alt="sym" width="80%">
+    </div>
+  </div>
+<div class='paper-box-text' markdown="1">
+
+**HGC-Net: Deep anthropomorphic hand grasping in clutter**
+
+**Yiming Li**, Wei Wei, Daheng Li, Peng Wang, Wanyi Li, Jun Zhong
+
+In Proc. IEEE Intl Conf. on Robotics and Automation 2022 (ICRA 2022).
+
+[[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9811756)
+</div>
+</div>
+
+<!--  -->
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <img src='images/handover.png' alt="sym" width="80%">
+    </div>
+  </div>
+<div class='paper-box-text' markdown="1">
+
+**Learning human-to-robot dexterous handovers for anthropomorphic hand**
+
+Hoanan Duan, Peng Wang, **Yiming Li**, Daheng Li, Wei Wei
+
+In IEEE Transactions on Cognitive and Developmental Systems(T-CDS) 15 (3), 1224-1238.
+
+[[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9870872)
+</div>
+</div>
+
+<!--  -->
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <img src='images/dvgg.png' alt="sym" width="80%">
+    </div>
+  </div>
+<div class='paper-box-text' markdown="1">
+
+**DVGG: Deep variational grasp generation for dextrous manipulation**
+
+Wei Wei, Daheng Li, Peng Wang, **Yiming Li**, Wanyi Li,Yongkang Luo, Jun Zhong
+
+In IEEE Robotics and Automation Letters (RA-L) 7 (2), 1659-1666.
+
+[[paper]](https://arxiv.org/pdf/2211.11154)
+</div>
+</div>
+
+<!--  -->
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <img src='images/sscl.jpg' alt="sym" width="80%">
+    </div>
+  </div>
+<div class='paper-box-text' markdown="1">
+
+**Simultaneous semantic and collision learning for 6-dof grasp pose estimation**
+
+ **Yiming Li**, Tao Kong, Ruihang Chu, Yifeng Li, Peng Wang, Lei Li
+
+In Proc. IEEE/RSJ Intl Conf. on Intelligent Robots and Systems 2022 (IROS 2022).
+
+[[paper]](https://arxiv.org/pdf/2108.02425)
+</div>
+</div>
 
 
 <!-- # 🎖 Honors and Awards
