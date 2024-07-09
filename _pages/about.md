@@ -31,22 +31,34 @@ My research interests lie in robot manipulation and interaction with humans in c
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/CDF.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><img src='images/CDF.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+Configuration Space Distance Fields for Manipulation Planning
+
+**Yiming Li**, Xuemin Chi, Amirreza Razmjoo, Sylvain Calinon
+
+In Proc. Robotics: Science and Systems 2024 (RSS 2024).
+
+[[arxiv]](https://arxiv.org/pdf/2406.01137)[[website]](https://sites.google.com/view/cdfmp/)
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><img src='images/CDF.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-Configuration Space Distance Fields for Manipulation Planning
-**Yiming Li**, Xuemin Chi, Amirreza Razmjoo, Sylvain Calinon
-In Proc. Robotics: Science and Systems 2024 (RSS 2024).
-[arxiv](https://arxiv.org/pdf/2406.01137)[website](https://sites.google.com/view/cdfmp)
+Online Learning of Continuous Signed Distance Fields Using Piecewise Polynomials
 
-<!-- [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> -->
-<!-- - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
+Ante Marić, **Yiming Li**, Sylvain Calinon
+
+In IEEE Robotics and Automation Letters (RA-L).
+
+[[arxiv]](https://arxiv.org/pdf/2401.07698)[[website]](https://sites.google.com/view/pp-sdf/)
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
-# 🎖 Honors and Awards
+
+<!-- # 🎖 Honors and Awards
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
@@ -59,4 +71,4 @@ In Proc. Robotics: Science and Systems 2024 (RSS 2024).
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
 
 # 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+- *2019.05 - 2020.02*, [Lorem](https://github.com/), China. -->
