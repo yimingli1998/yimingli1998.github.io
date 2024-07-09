@@ -29,17 +29,19 @@ My research interests lie in robot manipulation and interaction with humans in c
 
 - *2024.01*: &nbsp;🎉🎉 Our paper [Representing Robot Geometry as Distance Fields: Applications to Whole-body Manipulation](https://arxiv.org/pdf/2307.00533) is accepted to ICRA 2024!
 
-- *2022.10* I start my PhD in the [Robot Learning & Interaction group](https://idiap.ch/rli/)!
+- *2022.10*: &nbsp; I start my PhD in the [Robot Learning & Interaction group](https://idiap.ch/rli/)!
 
-- *2022.08*: &nbsp;🎉🎉 Our paper [Learning Human-to-Robot Dexterous Handovers for Anthropomorphic Hand](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9870872) is accepted to IEEE TRANSACTIONS ON COGNITIVE AND DEVELOPMENTAL SYSTEMS (T-CDS)!
+- *2022.08*: &nbsp; Our paper [Learning Human-to-Robot Dexterous Handovers for Anthropomorphic Hand](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9870872) is accepted to IEEE Transactions on Cognitive and Developmental Systems (T-CDS)!
 
-- *2022.08*: &nbsp;🎉🎉 Our paper [DVGG: Deep variational grasp generation for dextrous manipulation](https://arxiv.org/pdf/2211.11154) is accepted to RA-L!
+- *2022.08*: &nbsp; Our paper [DVGG: Deep variational grasp generation for dextrous manipulation](https://arxiv.org/pdf/2211.11154) is accepted to RA-L!
 
-- *2022.01*: &nbsp;🎉🎉 Our paper [HGC-Net: Deep Anthropomorphic Hand Grasping in Clutter](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9811756) is accepted to ICRA 2022!
+- *2022.01*: &nbsp; Our paper [HGC-Net: Deep Anthropomorphic Hand Grasping in Clutter](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9811756) is accepted to ICRA 2022!
 
-- *2021.07*: &nbsp;🎉🎉 Our paper [Simultaneous Semantic and Collision Learning for 6-DoF Grasp Pose Estimation](https://arxiv.org/pdf/2108.02425) is accepted to IROS 2022!
+- *2021.07*: &nbsp; Our paper [Simultaneous Semantic and Collision Learning for 6-DoF Grasp Pose Estimation](https://arxiv.org/pdf/2108.02425) is accepted to IROS 2022!
 
-# 📝 Publications 
+# 📝 Selected Publications 
+
+Please visit my [Google Scholar](https://scholar.google.com/citations?user=j9DxNmMAAAAJ&hl=en) page for full publications.
 
 <div class='paper-box'>
 <div class='paper-box-image'>
