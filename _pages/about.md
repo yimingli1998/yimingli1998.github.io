@@ -16,7 +16,7 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-Hello, I am a research assistant in the [Robot Learning & Interaction group](https://idiap.ch/rli/) at [Idiap Research Institute](https://www.idiap.ch/en) and a PhD candidate at [Ecole Polytechnique Federale de Lausanne (EPFL)](https://www.epfl.ch/en/), supervised by [Dr. Sylvain Calinon](https://calinon.ch/). 
+My name is Yiming Li. I am currently a second year PhD student in the [Robot Learning & Interaction group](https://idiap.ch/rli/) at the [Idiap Research Institute](https://www.idiap.ch/en) and [Ecole Polytechnique Federale de Lausanne (EPFL)](https://www.epfl.ch/en/). My research is supervised by [Dr. Sylvain Calinon](https://calinon.ch/). Prior to this, I obtained my Master's degree from the Institute of Automation, Chinese Academy of Sciences, and my Bachelor's degree from Tongji University.
 
 My research interests lie in robot manipulation and interaction with humans in complex environments. Specifically, I am focusing on geometric representations using machine learning techniques to enhance robot capabilities in environment modeling, planning, and control, with applications to manipulation tasks.
 
@@ -31,7 +31,7 @@ My research interests lie in robot manipulation and interaction with humans in c
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">RSS 2024</div><img src='images/CDF.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">RSS 2024</div><img src='images/CDF.png' alt="sym" width="50%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Configuration Space Distance Fields for Manipulation Planning**
@@ -46,7 +46,7 @@ In Proc. Robotics: Science and Systems 2024 (RSS 2024).
 
 <!--  -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">RA-L</div><img src='images/ppSDF.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">RA-L</div><img src='images/ppSDF.png' alt="sym" width="50%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Online Learning of Continuous Signed Distance Fields Using Piecewise Polynomials**
@@ -61,7 +61,7 @@ In IEEE Robotics and Automation Letters (RA-L).
 
 <!--  -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICRA 2024</div><img src='images/RDF.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICRA 2024</div><img src='images/RDF.png' alt="sym" width="50%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Representing Robot Geometry as Distance Fields: Applications to Whole-body Manipulation**
@@ -74,6 +74,20 @@ In Proc. IEEE Intl Conf. on Robotics and Automation 2024 (ICRA 2024).
 </div>
 </div>
 
+<!--  -->
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICRA 2024</div><img src='images/RDF.png' alt="sym" width="50%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**Representing Robot Geometry as Distance Fields: Applications to Whole-body Manipulation**
+
+**Yiming Li**, Yan Zhang, Amirreza Razmjoo, Sylvain Calinon
+
+In Proc. IEEE Intl Conf. on Robotics and Automation 2024 (ICRA 2024).
+
+[[arxiv]](https://arxiv.org/pdf/2401.07698)[[website]](https://sites.google.com/view/lrdf)
+</div>
+</div>
 
 
 <!-- # 🎖 Honors and Awards

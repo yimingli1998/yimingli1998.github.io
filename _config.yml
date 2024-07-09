@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Yiming Li"
-description              : "PhD candidate/research assistant at idiap research institute / EPFL"
+description              : "Research Assistance at Idiap research institute PhD candidate at EPFL"
 repository               : "yimingli1998/yimingli1998.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -28,7 +28,7 @@ author:
   employer         :
   pubmed           : 
   googlescholar    : https://scholar.google.com/citations?user=j9DxNmMAAAAJ&hl=en
-  email            : ymli.cn@gmail.com
+  email            : "ymli.cn@gmail.com"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
