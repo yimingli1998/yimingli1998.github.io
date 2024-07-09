@@ -22,16 +22,16 @@ My name is Yiming Li. I am currently a second year PhD student in the [Robot Lea
 My research interests lie in robot manipulation and interaction with humans in complex environments. Specifically, I am focusing on geometric representations using machine learning techniques to enhance robot capabilities in environment modeling, planning, and control, with applications to manipulation tasks.
 
 
-<!-- # 🔥 News
+# 🔥 News
 - *2024.05*: &nbsp;🎉🎉 Our paper [Configuration Space Distance Fields for Manipulation Planning](https://arxiv.org/pdf/2406.01137) is accepted to RSS 2024!
 
 - *2024.04*: &nbsp;🎉🎉 Our paper [Online Learning of Continuous Signed Distance Fields Using Piecewise Polynomials](https://arxiv.org/pdf/2401.07698) is accepted to IEEE Robotics and Automation Letters (RA-L)!
 
-- *2024.01*: &nbsp;🎉🎉 Our paper [Representing Robot Geometry as Distance Fields: Applications to Whole-body Manipulation](https://arxiv.org/pdf/2307.00533) is accepted to ICRA 2024! -->
+- *2024.01*: &nbsp;🎉🎉 Our paper [Representing Robot Geometry as Distance Fields: Applications to Whole-body Manipulation](https://arxiv.org/pdf/2307.00533) is accepted to ICRA 2024!
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">RSS 2024</div><img src='images/CDF.png' alt="sym" width="30%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">RSS 2024</div><img src='images/CDF.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Configuration Space Distance Fields for Manipulation Planning**
@@ -49,7 +49,7 @@ In Proc. Robotics: Science and Systems 2024 (RSS 2024).
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
-      <img src='images/CDF.png' alt="sym" width="30%">
+      <img src='images/CDF.png' alt="sym" width="60%">
     </div>
   </div>
 <div class='paper-box-text' markdown="1">
@@ -69,7 +69,7 @@ In IEEE Robotics and Automation Letters (RA-L).
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
-      <img src='images/RDF.png' alt="sym" width="30%">
+      <img src='images/RDF.png' alt="sym" width="60%">
     </div>
   </div>
 <div class='paper-box-text' markdown="1">
@@ -88,7 +88,7 @@ In Proc. IEEE Intl Conf. on Robotics and Automation 2024 (ICRA 2024).
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
-      <img src='images/ppSDF.png' alt="sym" width="30%">
+      <img src='images/ppSDF.png' alt="sym" width="60%">
     </div>
   </div>
 <div class='paper-box-text' markdown="1">
