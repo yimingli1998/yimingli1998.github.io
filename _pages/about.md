@@ -25,16 +25,26 @@ My research interests lie in robot manipulation and interaction with humans in c
 # 🔥 News
 - *2024.05*: &nbsp;🎉🎉 Our paper [Configuration Space Distance Fields for Manipulation Planning](https://arxiv.org/pdf/2406.01137) is accepted to RSS 2024!
 
-- *2024.04*: &nbsp;🎉🎉 Our paper [Online Learning of Continuous Signed Distance Fields Using Piecewise Polynomials](https://arxiv.org/pdf/2401.07698) is accepted to IEEE Robotics and Automation Letters (RA-L)!
+- *2024.04*: &nbsp;🎉🎉 Our paper [Online Learning of Continuous Signed Distance Fields Using Piecewise Polynomials](https://arxiv.org/pdf/2401.07698) is accepted to RA-L!
 
 - *2024.01*: &nbsp;🎉🎉 Our paper [Representing Robot Geometry as Distance Fields: Applications to Whole-body Manipulation](https://arxiv.org/pdf/2307.00533) is accepted to ICRA 2024!
+
+- *2022.10* I start my PhD in the [Robot Learning & Interaction group](https://idiap.ch/rli/)!
+
+- *2022.08*: &nbsp;🎉🎉 Our paper [Learning Human-to-Robot Dexterous Handovers for Anthropomorphic Hand](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9870872) is accepted to IEEE TRANSACTIONS ON COGNITIVE AND DEVELOPMENTAL SYSTEMS (T-CDS)!
+
+- *2022.08*: &nbsp;🎉🎉 Our paper [DVGG: Deep variational grasp generation for dextrous manipulation](https://arxiv.org/pdf/2211.11154) is accepted to RA-L!
+
+- *2022.01*: &nbsp;🎉🎉 Our paper [HGC-Net: Deep Anthropomorphic Hand Grasping in Clutter](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9811756) is accepted to ICRA 2022!
+
+- *2021.07*: &nbsp;🎉🎉 Our paper [Simultaneous Semantic and Collision Learning for 6-DoF Grasp Pose Estimation](https://arxiv.org/pdf/2108.02425) is accepted to IROS 2022!
 
 # 📝 Publications 
 
 <div class='paper-box'>
 <div class='paper-box-image'>
   <div>
-    <img src='images/ppSDF.png' alt="sym" width="60%">
+    <img src='images/ppSDF.png' alt="sym" width="80%">
     </div>
   </div>
 <div class='paper-box-text' markdown="1">
@@ -54,7 +64,7 @@ In Proc. Robotics: Science and Systems 2024 (RSS 2024).
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
-      <img src='images/ppSDF.png' alt="sym" width="60%">
+      <img src='images/ppSDF.png' alt="sym" width="80%">
     </div>
   </div>
 <div class='paper-box-text' markdown="1">
@@ -74,7 +84,7 @@ In IEEE Robotics and Automation Letters (RA-L).
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
-      <img src='images/RDF.png' alt="sym" width="60%">
+      <img src='images/RDF.png' alt="sym" width="80%">
     </div>
   </div>
 <div class='paper-box-text' markdown="1">
