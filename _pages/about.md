@@ -28,7 +28,7 @@ During my master's, I worked on learning-based approaches for robotic grasping i
 I welcome the opportunity to listen to others and exchange ideas. Please feel free to drop me an email if you want to discuss anything with me!
 
 
-# 🔥 News
+# 🔥 New
 - *2024.05*: &nbsp;🎉🎉 Our paper about [configuration space distance fields](https://arxiv.org/pdf/2406.01137) is accepted to RSS 2024!
 
 - *2024.04*: &nbsp;🎉🎉 Our paper about [online learning signed distance fields using piecewise polynomials](https://arxiv.org/pdf/2401.07698) is accepted to RA-L!
@@ -83,7 +83,7 @@ Ante Marić, **Yiming Li**, Sylvain Calinon
 
 IEEE Robotics and Automation Letters (RA-L), 9 (6), 6020-6026.
 
-[[paper]](https://arxiv.org/pdf/2307.00533)[[website]](https://sites.google.com/view/pp-sdf)
+[[paper]](https://arxiv.org/pdf/2401.07698)[[website]](https://sites.google.com/view/pp-sdf)
 </div>
 </div>
 
@@ -103,7 +103,7 @@ IEEE Robotics and Automation Letters (RA-L), 9 (6), 6020-6026.
 
 In Proc. IEEE Intl Conf. on Robotics and Automation 2024 (ICRA 2024).
 
-[[paper]](https://arxiv.org/pdf/2401.07698)[[website]](https://sites.google.com/view/lrdf)
+[[paper]](https://arxiv.org/pdf/2307.00533)[[website]](https://sites.google.com/view/lrdf)
 </div>
 </div>
 
