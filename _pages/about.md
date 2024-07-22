@@ -28,7 +28,9 @@ During my master's, I worked on learning-based approaches for robotic grasping i
 I welcome the opportunity to listen to others and exchange ideas. Please feel free to drop me an email if you want to discuss anything with me!
 
 
-# 🔥 New
+# 🔥 News
+- *2024.05*: &nbsp;🎉🎉 Our paper [Configuration Space Distance Fields for Manipulation Planning](https://arxiv.org/pdf/2406.01137) has been nominated as a Best Paper Finalist at RSS 2024! We're thrilled to receive this recognition!
+
 - *2024.05*: &nbsp;🎉🎉 Our paper about [configuration space distance fields](https://arxiv.org/pdf/2406.01137) is accepted to RSS 2024!
 
 - *2024.04*: &nbsp;🎉🎉 Our paper about [online learning signed distance fields using piecewise polynomials](https://arxiv.org/pdf/2401.07698) is accepted to RA-L!
@@ -62,6 +64,8 @@ Please visit my [Google Scholar](https://scholar.google.com/citations?user=j9DxN
 **Yiming Li**, Xuemin Chi, Amirreza Razmjoo, Sylvain Calinon
 
 In Proc. Robotics: Science and Systems 2024 (RSS 2024).
+
+<span style="color:red;">Best Paper Award Finalist</span>
 
 [[paper]](https://arxiv.org/pdf/2406.01137)[[website]](https://sites.google.com/view/cdfmp)
 </div>
