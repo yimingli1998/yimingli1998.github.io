@@ -29,7 +29,7 @@ I welcome the opportunity to listen to others and exchange ideas. Please feel fr
 
 
 # 🔥 News
-- *2024.05*: &nbsp;🎉🎉 Our paper [Configuration Space Distance Fields for Manipulation Planning](https://arxiv.org/pdf/2406.01137) has been nominated as a Best Paper Finalist at RSS 2024! We're thrilled to receive this recognition!
+- *2024.07*: &nbsp;🎉🎉 Our paper [Configuration Space Distance Fields for Manipulation Planning](https://arxiv.org/pdf/2406.01137) has been nominated as a Best Paper Finalist at RSS 2024! We're thrilled to receive this recognition!
 
 - *2024.05*: &nbsp;🎉🎉 Our paper about [configuration space distance fields](https://arxiv.org/pdf/2406.01137) is accepted to RSS 2024!
 
@@ -193,7 +193,7 @@ In Proc. IEEE/RSJ Intl Conf. on Intelligent Robots and Systems 2022 (IROS 2022).
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 
 # 📖 Educations
-- *2022.10 - now*, École Polytechnique Fédérale de Lausanne (EPFL), Martigny, Switzerland.
+- *2022.10 - now*, École Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland.
 - *2019.06 - 2022.06*, Institute of Automation, Chinese Academy of Sciences, Beijing, China. 
 - *2015.09 - 2019.06*, Tongji University, Shanghai, China. 
 
