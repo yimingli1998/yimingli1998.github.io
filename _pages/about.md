@@ -19,13 +19,13 @@ redirect_from:
 My name is Yiming Li. I am currently a second year PhD student in the [Robot Learning & Interaction group](https://idiap.ch/rli/) at the [Idiap Research Institute](https://www.idiap.ch/en) and [École Polytechnique Fédérale de Lausanne (EPFL)](https://www.epfl.ch/en/), supervised by [Dr. Sylvain Calinon](https://calinon.ch/). 
 <!-- Prior to this, I obtained my Master's degree from the Institute of Automation, Chinese Academy of Sciences, and my Bachelor's degree from Tongji University. -->
 
-I am broadly interested in planning, manipulation, and learning for robotic systems that interact with their surroundings and humans. Currently, my focus is on differentiable representations in manipulation planning tasks.
+I am broadly interested in planning, manipulation, and learning for robotic systems that interact with their surroundings and humans. Currently, my focus is on geometric representations for learning and optimization. During my master's, I worked on learning-based approaches for robotic grasping in cluttered environments.
+<!-- 
+*Why differentiable representations*? Gradients play a crucial role in AI's training and optimization processes. Gradient-based optimization techniques are widely used in learning, planning, and control. However, these components are usually computed separately (for instance, learning and planning typically focus on the task space, while control commands are in the joint space). On the other hand, end-to-end approaches directly output control commands but function as a black box. Differentiable robot representation bridges these approaches, allowing for gradient-based optimization from high-level scene understanding to low-level control in a unified framework. Differential geometries and equations are also appealing in solving robot manipulation problems. They are well-studied in mathematics but usually hard to scale to high-dimensional robot systems. Neural PDE/ODE solvers seem promising. -->
 
-*Why differentiable representations*? Gradients play a crucial role in AI's training and optimization processes. Gradient-based optimization techniques are widely used in learning, planning, and control. However, these components are usually computed separately (for instance, learning and planning typically focus on the task space, while control commands are in the joint space). On the other hand, end-to-end approaches directly output control commands but function as a black box. Differentiable robot representation bridges these approaches, allowing for gradient-based optimization from high-level scene understanding to low-level control in a unified framework. Differential geometries and equations are also appealing in solving robot manipulation problems. They are well-studied in mathematics but usually hard to scale to high-dimensional robot systems. Neural PDE/ODE solvers seem promising.
+<!-- During my master's, I worked on learning-based approaches for robotic grasping in cluttered environments.
 
-During my master's, I worked on learning-based approaches for robotic grasping in cluttered environments.
-
-I welcome the opportunity to listen to others and exchange ideas. Please feel free to drop me an email if you want to discuss anything with me!
+I welcome the opportunity to listen to others and exchange ideas. Please feel free to drop me an email if you want to discuss anything with me! -->
 
 
 # 🔥 News
@@ -50,6 +50,28 @@ I welcome the opportunity to listen to others and exchange ideas. Please feel fr
 # 📝 Selected Publications 
 
 Please visit my [Google Scholar](https://scholar.google.com/citations?user=j9DxNmMAAAAJ&hl=en) page for full publications.
+
+<div class='paper-box'>
+<div class='paper-box-image'>
+  <div>
+    <img src='images/GeoMP.png' alt="sym" width="80%">
+    </div>
+  </div>
+<div class='paper-box-text' markdown="1">
+
+**Configuration Space Distance Fields for Manipulation Planning**
+
+**Yiming Li^* **, Jiacheng Qiu^*, Sylvain Calinon
+
+arXiv:2412.05197.
+
+<span style="color:red;">Best Paper Award Finalist</span>
+
+[[paper]](https://arxiv.org/pdf/2412.05197)[[website]](https://sites.google.com/view/geodf)
+</div>
+</div>
+
+<!--  -->
 
 <div class='paper-box'>
 <div class='paper-box-image'>
