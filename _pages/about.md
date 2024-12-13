@@ -64,9 +64,6 @@ Please visit my [Google Scholar](https://scholar.google.com/citations?user=j9DxN
 **Yiming Li**, Jiacheng Qiu, Sylvain Calinon
 
 arXiv:2412.05197.
-
-<span style="color:red;">Best Paper Award Finalist</span>
-
 [[paper]](https://arxiv.org/pdf/2412.05197)[[website]](https://sites.google.com/view/geodf)
 </div>
 </div>
