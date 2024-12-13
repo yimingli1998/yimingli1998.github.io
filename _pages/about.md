@@ -59,9 +59,9 @@ Please visit my [Google Scholar](https://scholar.google.com/citations?user=j9DxN
   </div>
 <div class='paper-box-text' markdown="1">
 
-**Configuration Space Distance Fields for Manipulation Planning**
+**A Riemannian Take on Distance Fields and Geodesic Flows in Robotics**
 
-**Yiming Li^* **, Jiacheng Qiu^*, Sylvain Calinon
+**Yiming Li**, Jiacheng Qiu, Sylvain Calinon
 
 arXiv:2412.05197.
 
