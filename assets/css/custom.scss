@@ -1,0 +1,219 @@
+/* 
+   Custom styling for Yiming Li's academic website
+   This file adds modern styling to the default theme
+*/
+
+// Typography improvements
+body {
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5em;
+  margin-bottom: 0.8em;
+  font-weight: 600;
+  color: #222;
+  letter-spacing: -0.01em;
+}
+
+// Profile area improvements
+.author__avatar img {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.author__content {
+  margin-left: 20px;
+}
+
+// Section styling
+section {
+  margin-bottom: 3em;
+}
+
+// Improve anchor links
+.anchor {
+  padding-top: 80px; 
+  margin-top: -60px;
+  display: inline-block;
+}
+
+// News section styling
+#news {
+  background-color: #f9f9fb;
+  border-radius: 10px;
+  padding: 1.5em;
+  margin: 2em 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  
+  ul {
+    margin-left: 1em;
+  }
+  
+  li {
+    margin-bottom: 0.8em;
+    list-style-type: none;
+    position: relative;
+    
+    &:before {
+      content: '•';
+      color: #4a6fe9;
+      font-weight: bold;
+      position: absolute;
+      left: -1em;
+    }
+  }
+}
+
+// Publication boxes improvements
+.paper-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eaeaea;
+  padding: 2em 0;
+  margin-bottom: 1em;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: #f9f9fb;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  }
+
+  .paper-box-image {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    order: 2;
+    
+    img {
+      max-width: 400px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+      object-fit: cover;
+      
+      &:hover {
+        box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      }
+    }
+  }
+  
+  .paper-box-text {
+    max-width: 100%;
+    order: 1;
+    
+    a {
+      color: #4a6fe9;
+      text-decoration: none;
+      transition: color 0.2s ease;
+      
+      &:hover {
+        color: #304bb3;
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .paper-box-image {
+      justify-content: flex-start;
+      min-width: 200px;
+      max-width: 35%;
+      order: 1;
+    }
+    
+    .paper-box-text {
+      justify-content: flex-start;
+      padding-left: 2em;
+      max-width: 65%;
+      order: 2;
+    }
+  }
+}
+
+// Publication links styling
+.paper-links {
+  margin-top: 0.5em;
+  
+  a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background-color: #f0f2f9;
+    color: #4a6fe9;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: all 0.2s ease;
+    
+    &:hover {
+      background-color: #e0e4f4;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+// Contact section
+#contact {
+  margin-top: 3em;
+  background-color: #f9f9fb;
+  border-radius: 10px;
+  padding: 1.5em;
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  li {
+    margin-bottom: 0.5em;
+  }
+}
+
+// General improvements
+a {
+  color: #4a6fe9;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: #304bb3;
+    text-decoration: underline;
+  }
+}
+
+.highlight {
+  color: #4a6fe9;
+  font-weight: 600;
+}
+
+// Responsive improvements
+@media screen and (max-width: 767px) {
+  .paper-box {
+    padding: 1.5em 0;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+// Add a subtle scroll behavior
+html {
+  scroll-behavior: smooth;
+} 

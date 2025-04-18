@@ -6,8 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Yiming Li"
-description              : "Research Assistance at Idiap research institute PhD candidate at EPFL"
+title                    : "Yiming Li | PhD Student at EPFL/Idiap"
+description              : "Yiming Li's academic website - Robotics, Learning and Manipulation"
 repository               : "yimingli1998/yimingli1998.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -17,17 +17,17 @@ google_analytics_id      :  # get google_analytics_id from https://analytics.goo
 # SEO Related
 google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about
 bing_site_verification   :  # get bing_site_verification from https://www.bing.com/webmasters/about
-baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
+baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.baidu.com/login/index
 
 # Site Author
 author:
   name             : "Yiming Li"
-  avatar           : images/avatar.jpg
-  bio              : idiap / EPFL 
-  location         : Martigny, Switzerland
-  employer         :
+  avatar           : "images/avatar.jpg"
+  bio              : "PhD Student in Robotics Learning & Interaction Group" 
+  location         : "Martigny, Switzerland"
+  employer         : "Idiap Research Institute / EPFL"
   pubmed           : 
-  googlescholar    : https://scholar.google.com/citations?user=j9DxNmMAAAAJ&hl=en
+  googlescholar    : "https://scholar.google.com/citations?user=j9DxNmMAAAAJ&hl=en"
   email            : "ymli.cn@gmail.com"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -37,13 +37,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : yimingli1998
+  github           : "yimingli1998"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : yiming-li-858718252
+  linkedin         : "yiming-li-858718252"
   dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
   orcid            : # e.g., "https://orcid.org/xxxx"
   pinterest        :
