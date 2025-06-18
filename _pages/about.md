@@ -49,10 +49,12 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-My name is Yiming Li. I am currently a second year PhD student in the [Robot Learning & Interaction group](https://idiap.ch/rli/) at the [Idiap Research Institute](https://www.idiap.ch/en) and [École Polytechnique Fédérale de Lausanne (EPFL)](https://www.epfl.ch/en/), supervised by [Dr. Sylvain Calinon](https://calinon.ch/). 
+My name is Yiming Li. I am currently a third year PhD student in the [Robot Learning & Interaction group](https://idiap.ch/rli/) at the [Idiap Research Institute](https://www.idiap.ch/en) and [École Polytechnique Fédérale de Lausanne (EPFL)](https://www.epfl.ch/en/), supervised by [Dr. Sylvain Calinon](https://calinon.ch/). 
 <!-- Prior to this, I obtained my Master's degree from the Institute of Automation, Chinese Academy of Sciences, and my Bachelor's degree from Tongji University. -->
 
-I am broadly interested in planning, manipulation, and learning for robotic systems that interact with their surroundings and humans. Currently, my focus is on geometric representations for learning and optimization. During my master's, I worked on learning-based approaches for robotic grasping in cluttered environments.
+My research focuses on robot manipulation in unstructured environments, aiming to advance robotic capabilities for real-world deployment. To this end, I develop intelligent, embodied systems through work in robot learning, motion planning, 3D perception, and optimal control.
+
+<!-- I am broadly interested in planning, manipulation, and learning for robotic systems that interact with their surroundings and humans. Currently, my focus is on geometric representations for learning and optimization. During my master's, I worked on learning-based approaches for robotic grasping in cluttered environments. -->
 <!-- 
 *Why differentiable representations*? Gradients play a crucial role in AI's training and optimization processes. Gradient-based optimization techniques are widely used in learning, planning, and control. However, these components are usually computed separately (for instance, learning and planning typically focus on the task space, while control commands are in the joint space). On the other hand, end-to-end approaches directly output control commands but function as a black box. Differentiable robot representation bridges these approaches, allowing for gradient-based optimization from high-level scene understanding to low-level control in a unified framework. Differential geometries and equations are also appealing in solving robot manipulation problems. They are well-studied in mathematics but usually hard to scale to high-dimensional robot systems. Neural PDE/ODE solvers seem promising. -->
 
