@@ -98,8 +98,8 @@ Please visit my [Google Scholar](https://scholar.google.com/citations?user=j9DxN
 arXiv:2504.09705.
 
 <a href="https://arxiv.org/pdf/2504.09705" class="btn btn--danger btn--small">paper</a>
-<a href="https://mp-df-ds.github.io/" class="btn btn--info btn--small">interactive page</a>
-<a href="https://github.com/mp-df-ds/mp-df-ds" class="btn btn--success btn--small">code</a>
+<a href="https://idiap.github.io/mp-df-ds/" class="btn btn--info btn--small">interactive page</a>
+<a href="https://github.com/idiap/mp-df-ds" class="btn btn--success btn--small">code</a>
 </div>
 </div>
 
