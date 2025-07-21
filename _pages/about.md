@@ -64,6 +64,8 @@ I welcome the opportunity to listen to others and exchange ideas. Please feel fr
 
 
 # 🔥 News
+- *2025.07*: [From Movement Primitives to Distance Fields to Dynamical Systems](https://arxiv.org/pdf/2504.09705) - accepted to RAL
+
 - *2024.07*: [Configuration space distance fields](https://arxiv.org/pdf/2406.01137) - Best Paper Finalist at RSS 2024!
 
 - *2024.05*: [Configuration space distance fields](https://arxiv.org/pdf/2406.01137) accepted to RSS 2024
@@ -95,7 +97,7 @@ Please visit my [Google Scholar](https://scholar.google.com/citations?user=j9DxN
 
 **Yiming Li** and Sylvain Calinon
 
-arXiv:2504.09705.
+IEEE Robotics and Automation Letters (RA-L).
 
 <a href="https://arxiv.org/pdf/2504.09705" class="btn btn--danger btn--small">paper</a>
 <a href="https://idiap.github.io/mp-df-ds/" class="btn btn--info btn--small">interactive page</a>
