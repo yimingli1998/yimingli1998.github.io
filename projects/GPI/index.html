@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <title>Geometry-Aware Policy Imitation (GPI)</title>
+
+  <!-- Fonts & Frameworks -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-1lmO0l5bSleqU9jwELyhl725LLJoPLD114F8CbnMD4PlzyBbs596k8ZZrPmSu2Ce" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" integrity="sha384-EfZtK+aI8FgP+XLTCNRcd7J4RSSXaC/hV4kQcox2Scd-CB83/pfL9XKwax1BoYIb" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" integrity="sha384-QySSg6SqnKKvcWB2zI0vLPAcxpFsSKWekkLt6f4koxuM05T2m8lB2DUKIkrFYAoj" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-slider@2.0.5/dist/css/bulma-slider.min.css" integrity="sha384-3ruT7EAAfMdlffaBgnvsDJ6W/uVXETV3zo67YoiJn9L0XtLKCltuVzS6tVQVL5Ww" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha384-YWzhKL2whUzgiheMoM0aw1B0B8bavAU2yY5GZl5SW6p1I8z1L7GqXv8CBd7QL0Jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha384-e7e9Uc0t8uQ4Y6mVjrmS7n2BfdQmzthGdIwtGCA0MC08fHDcGYoYc6MjUIKcMZzD" crossorigin="anonymous">
+
+  <!-- MathJax for LaTeX -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <!-- Inline overrides for minimal text tweaks -->
+  <style>
+    body,td,th { font-family: 'Source Sans Pro', 'Avenir', 'Helvetica Neue', Arial, sans-serif; font-size: 16px; color: black; overflow-x: hidden; }
+    .main-title { font-size: 2.8rem; font-weight: 800; background: linear-gradient(45deg, red, #4169E1, #FF4500, #4169E1);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-size: 300% 300%; animation: gradient-shift 5s ease infinite; }
+    @keyframes gradient-shift { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+    .container { width: 975px; max-width: 975px; margin: 0 auto; padding: 0; display:flex; flex-wrap:wrap; justify-content:center; }
+    .author { font-size: 22px; font-weight: 500; width: 206px; color: #4169E1; }
+    .affiliation, .mono-affiliation { font-size: 19px; color: black; }
+    .author-block { font-size: 20px; line-height: 1.4; color: black; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+    .author-line { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+    .author-line span { font-weight: 500; color: #222; }
+    section { position: relative; padding-top: 22px; padding-bottom: 30px; }
+    section:before { content:""; position:absolute; top:0; left:50%; transform:translateX(-50%); height:2px; width:100%; max-width:1100px;
+      background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1.0), rgba(0,0,0,0)); }
+    .nav-anchor { display:block; position:absolute; width:0; height:0; top:-38px; visibility:hidden; }
+    .highlighted-link { display:inline-flex; align-items:center; padding:10px 20px; color:white; border-radius:25px; font-weight:bold; font-size:16px; text-decoration:none; }
+    .colab-link { background: linear-gradient(45deg, #2196F3, red); }
+    .arxiv-link { background: linear-gradient(45deg, #FFB74D, #FFA726); }
+    .back-to-top-button { display:inline-flex; align-items:center; padding:10px 20px; color:white; text-decoration:none; border-radius:25px; font-size:16px; }
+    .navbar-nav { display:flex; flex-direction:row; flex-wrap:nowrap; gap:18px; }
+    .navbar-nav .nav-item { display:inline-block; }
+    video { width: 100%; max-width: 975px !important; }
+    .figure-block { width: 100%; max-width: 975px; margin: 30px auto 0; }
+    .figure-block img { width: 100%; border-radius: 14px; border: 1px solid rgba(0,0,0,0.08); display: block; }
+    .figure-caption { margin-top: 12px; font-size: 15px; line-height: 1.5; color: #2f2f35; text-align: left; }
+    .figure-row { width: 100%; max-width: 975px; margin: 30px auto 0; display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; }
+    .figure-item { flex: 1 1 440px; max-width: 460px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; margin: 0; }
+    .figure-item img { width: 100%; border-radius: 14px; border: 1px solid rgba(0,0,0,0.08); display: block; }
+    .inner-text { font-size: 18px; line-height: 1.6; color: #1f1f22; margin: 0 auto; max-width: 975px; }
+    .inner-text.left { text-align: left; }
+    .inner-text:not(.left) { text-align: center; }
+    .video-caption { margin-top: 12px; font-size: 15px; line-height: 1.5; color: #2f2f35; }
+  </style>
+</head>
+
+<body>
+  <!-- Fixed navbar (same structure & classes) -->
+  <nav class="navbar is-fixed-top navbar-expand-lg navbar-dark" style="background-color: black;">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#talk">Talk</a></li>
+        <li class="nav-item"><a class="nav-link" href="#motivation">Motivation</a></li>
+        <li class="nav-item"><a class="nav-link" href="#conditional-flow">Progression flow</a></li>
+        <li class="nav-item"><a class="nav-link" href="#marginal-flow">Attraction flow</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pusht-multimodality">Multimodality</a></li>
+        <li class="nav-item"><a class="nav-link" href="#decoupling-stochasticity">Decoupling</a></li>
+        <li class="nav-item"><a class="nav-link" href="#caveats">Limitations</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#real-world">Real-world</a></li>
+      </ul>
+    </div>
+    
+  </nav>
+
+  <!-- Hero -->
+  <section class="is-light" style="padding-top: 50px">
+    <div class="columns is-centered">
+      <div class="column has-text-centered">
+        <div class="container" id="title" style="font-size:39px; font-weight:bold;">
+          <p class="main-title"><u>Geometry-Aware Policy Imitation (GPI)</u></p>
+        </div>
+      </div>
+        <br>
+
+        <!-- Authors -->
+        <div class="container" style="margin-bottom: 12px;">
+          <div class="author-block">
+            <div class="author-line">
+              <span>Yiming&nbsp;Li<sup>1,2</sup></span>
+              <span>Nael&nbsp;Darwiche<sup>2</sup></span>
+              <span>Amirreza&nbsp;Razmjoo<sup>1,2</sup></span>
+              <span>Sichao&nbsp;Liu<sup>2</sup></span>
+            </div>
+            <div class="author-line">
+              <span>Yilun&nbsp;Du<sup>3</sup></span>
+              <span>Auke&nbsp;Ijspeert<sup>2</sup></span>
+              <span>Sylvain&nbsp;Calinon<sup>1,2</sup></span>
+            </div>
+          </div>
+        </div>
+        <div class="container" style="margin-bottom: 7px">
+          <div class="mono-affiliation">
+            <sup>1</sup> Idiap Research Institute&nbsp;&nbsp;|&nbsp;&nbsp;<sup>2</sup> EPFL&nbsp;&nbsp;|&nbsp;&nbsp;<sup>3</sup> Harvard University
+          </div>
+        </div>
+
+
+        <!-- Action buttons -->
+        <div class="container" style="gap: 12px; display:flex; justify-content:center; margin-top: 8px;">
+          <a class="highlighted-link arxiv-link" href="GEOMETRY_AWARE_POLICY_IMITATION.pdf" target="_blank" rel="noopener">
+            <span class="icon">📄</span><span>Paper (PDF)</span>
+          </a>
+          <a class="highlighted-link colab-link" href="#bibtex">
+            <span class="icon">📚</span><span>BibTeX</span>
+          </a>
+        </div>
+    </div>
+  </section>
+
+  <!-- Description -->
+  <div class="container" style="font-size:32px; font-weight:bold;">
+    <p>Simple, Fast and Flexible</p>
+  </div>
+  <figure class="figure-block">
+    <img src="main_results.png" alt="Figure 1 from the paper summarizing the GPI pipeline and Push-T results.">
+  <div class="container" style="font-size:24px; font-weight:bold;">
+    <p>Evaluations on PushT Benchmark</p>
+  </div>
+  </figure>
+
+  <!-- Talk -->
+  <a id="talk" class="nav-anchor"></a>
+  <section class="is-dark">
+    <div class="container has-text-centered">
+      <h2 style="font-size:28px; font-weight:700;">Talk</h2>
+      <p class="inner-text">Watch the GPI overview and a real-robot deployment from the paper.</p>
+      <video class="header-vid" controls>
+        <source src="fruit_delivery.mp4" type="video/mp4">
+      </video>
+      <figcaption class="video-caption">Method overview and fruit delivery task: progression and attraction flows cooperate to stay close to demonstrations while navigating clutter.</figcaption>
+      <br>
+      <video class="header-vid" controls>
+        <source src="robot_flip.mp4" type="video/mp4">
+      </video>
+      <figcaption class="video-caption">Real-world box flip on the ALOHA platform, showcasing multimodal demonstrations and robustness to visual disturbances.</figcaption>
+    </div>
+  </section>
+
+  <!-- Motivation -->
+  <a id="motivation" class="nav-anchor"></a>
+  <section class="is-light">
+    <div class="container has-text-centered">
+      <h2 style="font-size:28px; font-weight:700;">Motivation</h2>
+      <p class="inner-text left">
+        Diffusion/flow-matching policies excel but are heavy and opaque. GPI reinterprets demonstrations Γ as
+        <em>geometric curves</em>, builds distance fields <em>d(x | Γ)</em>, and induces two primitives:
+        (i) a <strong>progression flow</strong> along the demo tangent and (ii) an <strong>attraction flow</strong>
+        given by the negative distance gradient. Their superposition yields a controllable, non-parametric vector field
+        that is fast, interpretable, and robust.
+      </p>
+      <figure class="figure-block">
+        <img src="vision_features.png" alt="Figure 2 illustrating three ways to obtain latent embeddings.">
+        <figcaption class="figure-caption">
+          Figure&nbsp;2 in the paper outlines the three feature pipelines we experiment with: a lightweight task-specific encoder,
+          an autoencoder that learns task-agnostic latents, and pretrained models (e.g., CLIP or SAM). GPI only needs the
+          distance in this latent space, so any of these choices can be swapped in without retraining the controller.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Progression flow -->
+  <a id="conditional-flow" class="nav-anchor"></a>
+  <section class="is-dark">
+    <div class="container has-text-centered">
+      <h2 style="font-size:28px; font-weight:700;">Progression flow</h2>
+      <p class="inner-text left">
+        The progression component advances the system along the expert trajectory using its local tangent
+        <code>u_demo(x)</code>. It ensures forward motion and task completion without backtracking.
+      </p>
+      <pre style="text-align:left; max-width:975px; margin:0 auto;"><code>π_prog(x) = λ₁(x) · u_demo(x)</code></pre>
+      <figure class="figure-block">
+        <img src="2d_example.png" alt="Figure 3 showing demonstrations, distance landscape, and flow fields.">
+        <figcaption class="figure-caption">
+          Figure&nbsp;3 from the paper: (a) two demonstrations forming a Y-shape, (b) the composed distance landscape, and (c–d)
+          the induced flow fields. The top row shows pure progression following tangents, while the bottom row adds attraction
+          to pull the policy back toward either branch. The combined field (right) illustrates how GPI produces smooth,
+          bifurcating behavior without training.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Attraction flow -->
+  <a id="marginal-flow" class="nav-anchor"></a>
+  <section class="is-light">
+    <div class="container has-text-centered">
+      <h2 style="font-size:28px; font-weight:700;">Attraction flow</h2>
+      <p class="inner-text left">
+        The attraction component corrects deviations by following the negative gradient of the distance field in the
+        actuated subspace. This stabilizes the dynamics, pulling the state back toward the demonstration manifold.
+      </p>
+      <pre style="text-align:left; max-width:975px; margin:0 auto;"><code>π_attr(x) = − λ₂(x) · ∇<sub>x′</sub> d(x | Γ)</code></pre>
+    </div>
+  </section>
+
+  <!-- Multimodality -->
+  <a id="pusht-multimodality" class="nav-anchor"></a>
+  <section class="is-dark">
+    <div class="container has-text-centered">
+      <h2 style="font-size:28px; font-weight:700;">Multimodality</h2>
+      <p class="inner-text left">
+        GPI preserves distinct demonstrations as separate models and composes the <em>K</em> nearest via soft weights
+        <code>w_i(x) ∝ exp(−β · d(x | Γ(i)))</code>, enabling natural multimodal behavior without mode collapse.
+      </p>
+      <pre style="text-align:left; max-width:975px; margin:0 auto;"><code>π(x) = Σ_i w_i(x) · [ λ₁ u_demo^{(i)}(x) − λ₂ ∇<sub>x′</sub> d(x | Γ(i)) ]</code></pre>
+    </div>
+  </section>
+
+  <!-- Decoupling -->
+  <a id="decoupling-stochasticity" class="nav-anchor"></a>
+  <section class="is-light">
+    <div class="container has-text-centered">
+      <h2 style="font-size:28px; font-weight:700;">Decoupling representation and policy</h2>
+      <p class="inner-text left">
+        We explicitly separate the learned <em>distance metric</em> (from vision/state encoders) from <em>policy synthesis</em>.
+        Encoders can be swapped or fine-tuned independently; the reactive controller remains a simple first-order system.
+      </p>
+    </div>
+  </section>
+
+  <!-- Limitations -->
+  <a id="caveats" class="nav-anchor"></a>
+  <section class="is-dark">
+    <div class="container has-text-centered">
+      <h2 style="font-size:28px; font-weight:700;">Limitations</h2>
+      <p class="inner-text left">
+        GPI relies on meaningful distance fields; poor representation learning can degrade attraction. Extremely long-horizon
+        tasks may require waypointing or light receding-horizon planning. Safety constraints are not enforced by default.
+      </p>
+    </div>
+  </section>
+
+  <!-- Real-world / Results -->
+  <a id="real-world" class="nav-anchor"></a>
+  <section class="is-light">
+    <div class="container has-text-centered">
+      <h2 style="font-size:28px; font-weight:700;">Results</h2>
+      <p class="inner-text">Push-T snapshot (state vs. vision; per-step latency and memory).</p>
+      <div style="width:100%; overflow-x:auto;">
+        <table class="table is-striped is-fullwidth" style="margin: 0 auto; max-width: 975px;">
+          <thead>
+            <tr>
+              <th>Method</th><th>State: Avg/Max</th><th>Train / Infer</th><th>Memory</th>
+              <th>Vision: Avg/Max</th><th>Train / Infer</th><th>Memory</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>DDPM</td><td>82.3 / 86.3</td><td>1.0 h / 641 ms</td><td>252 MB</td><td>80.9 / 85.5</td><td>2.5 h / 647 ms</td><td>353 MB</td></tr>
+            <tr><td>DDIM</td><td>81.5 / 85.1</td><td>1.0 h / 65 ms</td><td>252 MB</td><td>79.1 / 83.1</td><td>2.5 h / 67 ms</td><td>353 MB</td></tr>
+            <tr><td><b>GPI (Ours)</b></td><td><b>85.8 / 89.0</b></td><td><b>0 h / 0.6 ms</b></td><td><b>0.7 MB</b></td>
+                <td><b>83.3 / 86.9</b></td><td><b>0.3 h / 3.3 ms</b></td><td><b>44 MB</b></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="inner-text">Evaluation follows standard Push-T protocols; latencies are per-step.</p>
+      <p class="inner-text left" style="margin-top:28px;">
+        Figure&nbsp;4 (below) studies receding-horizon rollouts. Even when we plan over 64-step horizons, both state and
+        vision settings retain strong performance, showing the geometric controller can operate reactively or in a longer-horizon
+        mode without degradation.
+      </p>
+      <figure class="figure-block" style="max-width: 640px;">
+        <img src="reward_horizon.png" alt="Figure 4 plotting reward versus action horizon for state and vision inputs.">
+        <figcaption class="figure-caption">
+          Figure&nbsp;4: Reward versus planning horizon. Solid curves show best runs; dashed curves show averages across seeds.
+        </figcaption>
+      </figure>
+      <p class="inner-text left" style="margin-top:32px;">
+        Figure&nbsp;5 (next) highlights how performance scales with demonstration coverage. Whether actions are expressed
+        in a relative or absolute frame, increasing the subset size consistently boosts average reward and remains stable across
+        different neighbor counts <em>K</em>.
+      </p>
+      <figure class="figure-block">
+        <img src="action_subset_size.png" alt="Figure 5 showing average reward versus subset size for relative and absolute actions.">
+        <figcaption class="figure-caption">
+          Figure&nbsp;5: Demonstration density analysis. Each curve corresponds to a different number of blended neighbors.
+        </figcaption>
+      </figure>
+      <p class="inner-text left" style="margin-top:32px;">
+        Figure&nbsp;7 explores the interplay between the progression and attraction primitives. A broad range of weights
+        <em>(λ₁, λ₂)</em> produces high reward, underscoring that the two fields combine smoothly without delicate tuning.
+      </p>
+      <figure class="figure-block" style="max-width: 540px;">
+        <img src="lambda_reward.png" alt="Figure 7 heatmap of average reward as progression and attraction weights vary.">
+        <figcaption class="figure-caption">
+          Figure&nbsp;7: Heatmap of average reward as progression (λ₁) and attraction (λ₂) coefficients vary.
+        </figcaption>
+      </figure>
+      <p class="inner-text left" style="margin-top:32px;">
+        Figures&nbsp;8 and&nbsp;9 showcase the real-robot evaluations described in Section&nbsp;3.2 of the paper. The ALOHA clip
+        (top) captures multiple successful box-flip trajectories, while the Franka arm experiment (bottom) demonstrates human–robot
+        interaction where the robot reacts to a user presenting fruit.
+      </p>
+      <div class="figure-row">
+        <figure class="figure-item">
+          <img src="robot_experiments.png" alt="Figure 8 montage of the ALOHA box-flip trials.">
+          <figcaption class="figure-caption">
+            Figure&nbsp;8: Multiple rollouts of the box-flip task on ALOHA, illustrating multimodal strategies learned from demonstrations.
+          </figcaption>
+        </figure>
+        <figure class="figure-item">
+          <img src="hri.png" alt="Figure 9 showing the Franka arm handing fruit during a human-robot interaction trial.">
+          <figcaption class="figure-caption">
+            Figure&nbsp;9: Human–robot interaction on the Franka platform. The geometry-aware flows adapt to new fruit placements presented by a human partner.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- BibTeX -->
+  <a id="paper" class="nav-anchor"></a>
+  <section class="is-dark">
+    <div class="container has-text-centered">
+      <h2 style="font-size:28px; font-weight:700;">BibTeX</h2>
+      <div class="bibtex" id="bibtex">
+        <pre>@inproceedings{anonymous2026gpi,
+  title     = {Geometry-Aware Policy Imitation},
+  author    = {Anonymous},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2026},
+  note      = {Under review}
+}</pre>
+      </div>
+      <a href="#" onclick="toggleBibtex()" class="back-to-top-button" style="background:#4169E1;">Toggle BibTeX</a>
+      <script>
+        function toggleBibtex(){
+          var el = document.getElementById('bibtex');
+          if (el.style.display === 'none') el.style.display = 'block';
+          else el.style.display = 'none';
+        }
+      </script>
+      <div style="margin-top:16px;">
+        <a href="#title" class="back-to-top-button" style="background:#333;">↑ Back to top</a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="text-align:center; padding:24px; color:#444;">
+    © 2026 — Geometry-Aware Policy Imitation (GPI).
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha384-jN8XjeaUp43EIBgzHuLlHotE5T7V6czS4fFqqpwPIYOvToNiOfPLp8tf4yIm4X5a" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2LcR9GqQ8K/ux8u9P9d1Fq737F6QSy6ZjKXKJpHd6Z" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js" integrity="sha384-vM31xHnZlCLwvR2PagY7a8c4iAfDdc0AGJi/7/0GINuD/7++UZ5EONosFVJeFt3I" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bulma-slider@2.0.5/dist/js/bulma-slider.min.js" integrity="sha384-1icVpF6Qs1OtSWT8gJtIhXCTITVEWilR92pT9XyM54q9WlH0I1GtIsfRSAxEPPYU" crossorigin="anonymous"></script>
+</body>
+</html>
