@@ -21,333 +21,377 @@
 
   <!-- Inline overrides for minimal text tweaks -->
   <style>
-    body,td,th { font-family: 'Source Sans Pro', 'Avenir', 'Helvetica Neue', Arial, sans-serif; font-size: 16px; color: black; overflow-x: hidden; }
-    .main-title { font-size: 2.8rem; font-weight: 800; background: linear-gradient(45deg, red, #4169E1, #FF4500, #4169E1);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-size: 300% 300%; animation: gradient-shift 5s ease infinite; }
-    @keyframes gradient-shift { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
-    .container { width: 975px; max-width: 975px; margin: 0 auto; padding: 0; display:flex; flex-wrap:wrap; justify-content:center; }
-    .author { font-size: 22px; font-weight: 500; width: 206px; color: #4169E1; }
-    .affiliation, .mono-affiliation { font-size: 19px; color: black; }
-    .author-block { font-size: 20px; line-height: 1.4; color: black; display: flex; flex-direction: column; align-items: center; gap: 6px; }
-    .author-line { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
-    .author-line span { font-weight: 500; color: #222; }
-    section { position: relative; padding-top: 22px; padding-bottom: 30px; }
-    section:before { content:""; position:absolute; top:0; left:50%; transform:translateX(-50%); height:2px; width:100%; max-width:1100px;
-      background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1.0), rgba(0,0,0,0)); }
-    .nav-anchor { display:block; position:absolute; width:0; height:0; top:-38px; visibility:hidden; }
-    .highlighted-link { display:inline-flex; align-items:center; padding:10px 20px; color:white; border-radius:25px; font-weight:bold; font-size:16px; text-decoration:none; }
-    .colab-link { background: linear-gradient(45deg, #2196F3, red); }
-    .arxiv-link { background: linear-gradient(45deg, #FFB74D, #FFA726); }
-    .back-to-top-button { display:inline-flex; align-items:center; padding:10px 20px; color:white; text-decoration:none; border-radius:25px; font-size:16px; }
+    :root { color-scheme: light; }
+    body,td,th { font-family: "Source Sans Pro", "Avenir", "Helvetica Neue", Arial, sans-serif; font-size: 16px; color: #1a1d24; background: radial-gradient(circle at top, #eef5ff 0%, #f9fafc 55%, #f3f4f8 100%); line-height: 1.7; overflow-x: hidden; }
+    a { color: #2342d8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .navbar { background: linear-gradient(90deg, rgba(17,24,39,0.95), rgba(33,45,83,0.95)) !important; border-bottom: none; box-shadow: 0 14px 30px rgba(15, 19, 38, 0.25); padding: 12px 0; }
     .navbar-nav { display:flex; flex-direction:row; flex-wrap:nowrap; gap:18px; }
     .navbar-nav .nav-item { display:inline-block; }
-    video { width: 100%; max-width: 975px !important; }
-    .figure-block { width: 100%; max-width: 975px; margin: 30px auto 0; }
-    .figure-block img { width: 100%; border-radius: 14px; border: 1px solid rgba(0,0,0,0.08); display: block; }
-    .figure-caption { margin-top: 12px; font-size: 15px; line-height: 1.5; color: #2f2f35; text-align: left; }
-    .figure-row { width: 100%; max-width: 975px; margin: 30px auto 0; display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; }
-    .figure-item { flex: 1 1 440px; max-width: 460px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; margin: 0; }
-    .figure-item img { width: 100%; border-radius: 14px; border: 1px solid rgba(0,0,0,0.08); display: block; }
-    .inner-text { font-size: 18px; line-height: 1.6; color: #1f1f22; margin: 0 auto; max-width: 975px; }
+    .navbar .nav-link { font-weight:600; letter-spacing:0.35px; color: rgba(255,255,255,0.85) !important; padding:0; transition: color 0.2s ease, transform 0.2s ease; }
+    .navbar .nav-link:hover { color:#ffd27f !important; transform: translateY(-1px); }
+    .container { width: 975px; max-width: 100%; margin: 0 auto; padding: 0; display:flex; flex-wrap:wrap; justify-content:center; }
+    section { position: relative; padding-top: 22px; padding-bottom: 30px; scroll-margin-top: 84px; }
+    section:before { content:""; position:absolute; top:0; left:50%; transform:translateX(-50%); height:2px; width:100%; max-width:1100px; background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,0)); }
+    section .container { width:100%; max-width:975px; margin:0 auto; }
+    section.is-light { background:#ffffff; }
+    section.is-dark { background: rgb(235,235,235); }
+    .section-compact { padding-top: 28px; padding-bottom: 40px; }
+    .section-shell { width: 100%; display:flex; justify-content:center; }
+    .content-card { width: 100%; max-width: 975px; padding: 0 12px; }
+    .content-card.dark { background: transparent; }
+    .section-subtitle { font-size: 18px; letter-spacing: 0.18em; text-transform: uppercase; color: #39406a; font-weight: 700; margin-bottom: 14px; text-align: center; }
+    .main-title { font-size: 2.8rem; font-weight: 800; background: linear-gradient(45deg, red, #4169E1, #FF4500, #4169E1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-size: 300% 300%; animation: gradient-shift 5s ease infinite; text-align:center; }
+    @keyframes gradient-shift { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+    .colorful-text { background: linear-gradient(45deg, red, #4169E1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .key-highlight { font-weight: 650; color: #1633c6; }
+    .hero-section { padding-top: 80px; }
+    .hero-lead { margin-top: 20px; text-align: center; max-width: 780px; margin-left: auto; margin-right: auto; font-size: 28px; line-height: 1.65; }
+    .hero-meta { margin-top: 28px; display: flex; flex-direction: column; align-items: center; gap: 18px; }
+    .hero-affiliations { font-size: 18px; font-weight: 500; color: #374163; text-align: center; }
+    .author-block { font-size: 20px; line-height: 1.4; color: #1a1d24; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+    .author-line { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+    .author-line span sup { color: #4169E1; font-size: 0.7em; }
+    .highlighted-link { display:inline-flex; align-items:center; padding:10px 20px; color:white; border-radius:25px; font-weight:bold; font-size:16px; text-decoration:none; transition: all 0.3s ease; box-shadow: 0 2px 4px rgba(0,0,0,0.08); gap:8px; }
+    .highlighted-link:hover { transform: translateY(-4px); box-shadow: 0 4px 6px rgba(0,0,0,0.18); text-decoration:none; }
+    .colab-link { background: linear-gradient(45deg, #2196F3, red); }
+    .arxiv-link { background: linear-gradient(45deg, #FFB74D, #FFA726); }
+    .inner-text { width: 100%; max-width: 975px; font-size: 20px; text-align: center; margin: 0 auto; }
+    .inner-text.hero-lead { font-size: 24px; line-height: 1.7; }
+    .text-centered { text-align: center; }
+    .narrow { max-width: 780px; margin-left: auto; margin-right: auto; }
     .inner-text.left { text-align: left; }
-    .inner-text:not(.left) { text-align: center; }
-    .video-caption { margin-top: 12px; font-size: 15px; line-height: 1.5; color: #2f2f35; }
+    .inner-text.text-centered { text-align: center; font-size: 20px; }
+    .inner-text.narrow { max-width: 780px; margin-left: auto; margin-right: auto; }
+    .figure-block { width: 100%; max-width: 975px; margin: 30px auto 0; border-radius: 22px; background: rgba(255,255,255,0.88); padding: 24px 28px 28px; box-shadow: 0 18px 45px rgba(33, 36, 59, 0.12); }
+    section.is-dark .figure-block { background: rgba(255,255,255,0.88); box-shadow: 0 18px 32px rgba(0,0,0,0.08); }
+    .figure-block img { width: 100%; border-radius: 18px; border: 1px solid rgba(0,0,0,0.05); display: block; }
+    .figure-caption { margin-top: 16px; font-size: 15px; line-height: 1.5; color: #2f2f35; text-align: left; }
+    .figure-row { width: 100%; max-width: 975px; margin: 30px auto 0; display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; }
+    .figure-item { flex: 1 1 440px; max-width: 460px; display: flex; flex-direction: column; gap: 12px; margin: 0; }
+    .figure-item img { border-radius: 14px; border: 1px solid rgba(0,0,0,0.08); }
+    .video-grid { display: flex; flex-direction: column; gap: 28px; margin-top: 32px; }
+    .video-row { display: grid; gap: 24px; }
+    .video-row.cols-4 { grid-template-columns: repeat(4, minmax(200px, 1fr)); }
+    .video-row.cols-3 { grid-template-columns: repeat(3, minmax(220px, 1fr)); margin: 0 auto; width: 100%; max-width: 960px; }
+    .video-row.cols-2 { grid-template-columns: repeat(2, minmax(320px, 1fr)); margin: 0 auto; width: 100%; max-width: 900px; }
+    .video-cell { display: flex; flex-direction: column; gap: 12px; background: rgba(255,255,255,0.85); border-radius: 18px; padding: 16px; box-shadow: inset 0 0 0 1px rgba(132,148,255,0.15); }
+    .video-cell video { border-radius: 14px; border: 1px solid rgba(255,255,255,0.14); box-shadow: 0 10px 18px rgba(7, 9, 19, 0.18); }
+    .video-caption { margin-top: 8px; font-size: 14px; line-height: 1.5; color: #2f2f35; text-align: left; }
+    .metrics-table { border-radius: 16px; overflow: hidden; backdrop-filter: blur(4px); box-shadow: 0 18px 40px rgba(38, 53, 95, 0.12); background: rgba(255,255,255,0.92); }
+    .metrics-table thead th { background: linear-gradient(120deg, rgba(108,92,231,0.12), rgba(116,185,255,0.25)); font-weight: 700; color: #1f2a44; border: none; }
+    .metrics-table tbody tr:nth-child(odd) { background: rgba(247,249,255,0.9); }
+    .metrics-table td, .metrics-table th { padding: 14px 18px; border: none !important; }
+    .table-scroll { width:100%; overflow-x:auto; margin-top:24px; }
+    .mt-16 { margin-top: 16px; }
+    .mt-18 { margin-top: 18px; }
+    .mt-22 { margin-top: 22px; }
+    .mt-24 { margin-top: 24px; }
+    .mt-28 { margin-top: 28px; }
+    .mt-32 { margin-top: 32px; }
+    .mt-36 { margin-top: 36px; }
+    .bibtex pre { background:#f5f6fa; border-radius:8px; padding:16px; color:#2a2f3a; border:1px solid #dfe3ef; font-size:14px; }
+    .site-footer { text-align:center; padding:24px; color:#444; font-size:14px; }
+    .nav-anchor { display:block; position:absolute; width:0; height:0; z-index:-1; top:-38px; left:0; visibility:hidden; }
+    .back-to-top-button { display:inline-flex; align-items:center; padding:10px 20px; color:white; text-decoration:none; border-radius:25px; font-size:16px; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(0,0,0,0.1); background: linear-gradient(120deg,#2d3566,#0f1429); }
+    .back-to-top-button:hover { transform: translateY(-4px); box-shadow: 0 4px 6px rgba(0,0,0,0.15); text-decoration: none; }
+    @media (max-width: 1100px) {
+      .video-row.cols-4 { grid-template-columns: repeat(3, minmax(200px, 1fr)); }
+    }
+    @media (max-width: 900px) {
+      .video-row.cols-4,
+      .video-row.cols-3,
+      .video-row.cols-2 { grid-template-columns: repeat(2, minmax(200px, 1fr)); }
+      .hero-affiliations { font-size: 16px; }
+    }
+    @media (max-width: 720px) {
+      .main-title { font-size: 2.4rem; }
+      .hero-meta { gap: 14px; }
+      .inner-text { font-size: 17px; }
+    }
+    @media (max-width: 540px) {
+      .video-row.cols-4,
+      .video-row.cols-3,
+      .video-row.cols-2 { grid-template-columns: 1fr; }
+      .navbar-nav { gap: 12px; }
+    }
   </style>
 </head>
 
 <body>
   <!-- Fixed navbar (same structure & classes) -->
-  <nav class="navbar is-fixed-top navbar-expand-lg navbar-dark" style="background-color: black;">
+  <nav class="navbar is-fixed-top navbar-expand-lg">
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="#talk">Talk</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gpi">GPI</a></li>
+        <li class="nav-item"><a class="nav-link" href="#performance">Performance</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experiments">Robot</a></li>
         <li class="nav-item"><a class="nav-link" href="#motivation">Motivation</a></li>
-        <li class="nav-item"><a class="nav-link" href="#conditional-flow">Progression flow</a></li>
-        <li class="nav-item"><a class="nav-link" href="#marginal-flow">Attraction flow</a></li>
-        <li class="nav-item"><a class="nav-link" href="#pusht-multimodality">Multimodality</a></li>
-        <li class="nav-item"><a class="nav-link" href="#decoupling-stochasticity">Decoupling</a></li>
-        <li class="nav-item"><a class="nav-link" href="#caveats">Limitations</a></li>
-        <li class="nav-item"><a class="nav-link active" href="#real-world">Real-world</a></li>
+        <li class="nav-item"><a class="nav-link" href="#example">Example</a></li>
+        <li class="nav-item"><a class="nav-link" href="#simulation">Simulation</a></li>
       </ul>
     </div>
     
   </nav>
-
   <!-- Hero -->
-  <section class="is-light" style="padding-top: 50px">
-    <div class="columns is-centered">
-      <div class="column has-text-centered">
-        <div class="container" id="title" style="font-size:39px; font-weight:bold;">
-          <p class="main-title"><u>Geometry-Aware Policy Imitation (GPI)</u></p>
-        </div>
-      </div>
-        <br>
-
-        <!-- Authors -->
-        <div class="container" style="margin-bottom: 12px;">
+  <section class="is-light hero-section" id="gpi">
+    <div class="section-shell">
+      <div class="content-card">
+        <!-- <div class="section-subtitle"><h2>Geometry-Aware Policy Imitation</h2></div> -->
+        <h1 class="main-title">Geometry-Aware Policy Imitation (GPI)</h1>
+        <p class="inner-text hero-lead">
+          GPI treats demonstrations as <span class="key-highlight">geometric curves </span> that induces <span class="key-highlight">distance and flow fields </span> for <span class="key-highlight">simple, efficient, flexible </span>and <span class="key-highlight">interpretable </span> imitation learning.
+        </p>
+        <div class="hero-meta">
           <div class="author-block">
             <div class="author-line">
-              <span>Yiming&nbsp;Li<sup>1,2</sup></span>
-              <span>Nael&nbsp;Darwiche<sup>2</sup></span>
-              <span>Amirreza&nbsp;Razmjoo<sup>1,2</sup></span>
-              <span>Sichao&nbsp;Liu<sup>2</sup></span>
+              <span><a href="https://yimingli1998.github.io/" target="_blank" rel="noopener">Yiming&nbsp;Li</a><sup>1,2</sup></span>
+              <span><a href="https://people.epfl.ch/nael.darwiche?lang=en" target="_blank" rel="noopener">Nael&nbsp;Darwiche</a><sup>2</sup></span>
+              <span><a href="https://amirrazmjoo.github.io/" target="_blank" rel="noopener">Amirreza&nbsp;Razmjoo</a><sup>1,2</sup></span>
+              <span><a href="https://sites.google.com/view/sichao-liu/home" target="_blank" rel="noopener">Sichao&nbsp;Liu</a><sup>2</sup></span>
             </div>
             <div class="author-line">
-              <span>Yilun&nbsp;Du<sup>3</sup></span>
-              <span>Auke&nbsp;Ijspeert<sup>2</sup></span>
-              <span>Sylvain&nbsp;Calinon<sup>1,2</sup></span>
+              <span><a href="https://yilundu.github.io/" target="_blank" rel="noopener">Yilun&nbsp;Du</a><sup>3</sup></span>
+              <span><a href="https://www.epfl.ch/labs/biorob/people/ijspeert/" target="_blank" rel="noopener">Auke&nbsp;Ijspeert</a><sup>2</sup></span>
+              <span><a href="https://calinon.ch/" target="_blank" rel="noopener">Sylvain&nbsp;Calinon</a><sup>1,2</sup></span>
+            </div>
+          </div>
+          <div class="hero-affiliations">
+            <sup>1</sup> Idiap Research Institute &nbsp;|&nbsp; <sup>2</sup> EPFL &nbsp;|&nbsp; <sup>3</sup> Harvard University
+          </div>
+          <div class="hero-actions">
+            <a class="highlighted-link arxiv-link" href="GEOMETRY_AWARE_POLICY_IMITATION.pdf" target="_blank" rel="noopener">
+              <span class="icon">📄</span><span>Paper (PDF)</span>
+            </a>
+            <a class="highlighted-link colab-link" href="https://github.com/yimingli1998/GPI" target="_blank" rel="noopener">
+              <span class="icon">💻</span><span>Code</span>
+            </a>
+            <a class="highlighted-link bibtex-link" href="#bibtex">
+              <span class="icon">📚</span><span>BibTeX</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Description -->
+  <section class="is-light section-compact" id="performance">
+    <div class="section-shell">
+      <div class="content-card">
+        <div class="section-subtitle"><h2>Performance At A Glance</h2></div>
+        <p class="inner-text text-centered narrow">
+          From GPI we obtain <span class="key-highlight">multimodal behaviors</span>, <span class="key-highlight">better performance</span>, and inference times that are <span class="key-highlight"> 20–100× faster </span> than diffusion-based policies, while <span class="key-highlight">cutting memory usage by orders of magnitude</span>.
+        </p>
+        <figure class="figure-block mt-32">
+          <img src="main_results.png" alt="Figure summarizing the GPI pipeline and Push-T results, highlighting efficiency and performance gains.">
+
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- experiments -->
+  <section class="is-dark" id="experiments">
+    <div class="section-shell">
+      <div class="content-card dark text-centered">
+        <div class="section-subtitle"><h2>Real-robot deployments</h2></div>
+        <p class="inner-text text-centered narrow"> Two representative robot experiments highlight GPI coping with <span class="key-highlight">unknown complex dynamics</span> and <span class="key-highlight"> adaptive interaction. </span>
+        </p>
+        <div class="video-grid">
+          <div class="video-row cols-2">
+            <div class="video-cell">
+              <video class="header-vid" controls preload="metadata" muted>
+                <source src="robot_flip.mp4" type="video/mp4">
+              </video>
+              <figcaption class="video-caption">Box flip with complex unknown dynamics on ALOHA robot.</figcaption>
+            </div>
+            <div class="video-cell">
+              <video class="header-vid" controls preload="metadata" muted>
+                <source src="fruit_delivery.mp4" type="video/mp4">
+              </video>
+              <figcaption class="video-caption">Fruit delivery with reactive, anticipatory interaction on Franka robot.</figcaption>
             </div>
           </div>
         </div>
-        <div class="container" style="margin-bottom: 7px">
-          <div class="mono-affiliation">
-            <sup>1</sup> Idiap Research Institute&nbsp;&nbsp;|&nbsp;&nbsp;<sup>2</sup> EPFL&nbsp;&nbsp;|&nbsp;&nbsp;<sup>3</sup> Harvard University
+      </div>
+    </div>
+  </section>
+
+
+  <section class="is-light" id="motivation">
+    <div class="section-shell">
+      <div class="content-card">
+        <div class="section-subtitle"><h2>Motivation: Why <span class="colorful-text">GPI</span>?</h2></div>
+        <p class="inner-text mt-18">
+          Imitation ultimately means <span class="key-highlight">following the expert’s behavior</span> while <span class="key-highlight">staying as close as possible</span>. GPI makes this explicit by decoupling imitation into <span class="key-highlight">metric learning</span> and <span class="key-highlight">policy synthesis</span>.
+        </p>
+        <figure style="margin: 34px auto 12px; display: inline-block; max-width: 100%; text-align: left;">
+          <img src="main.png" alt="Overview figure illustrating Geometry-Aware Policy Imitation." style="max-width: 100%; height: auto; padding-top: 10px; padding-bottom: 12px; display: block;">
+          <figcaption class="inner-text left" style="font-size: 18px; line-height: 1.65;">
+            <ul style="margin: 12px 0 0 20px; padding: 0;">
+              <li>GPI treats demonstrations as geometric curves that induce distance fields across the full state space.</li>
+              <li>Projecting this distance field onto the actuated subspace yields two complementary flows: an <em>attraction flow</em> from the negative gradient (red arrow) and a <em>progression flow</em> from trajectory tangents (yellow arrow).</li>
+              <li>These flows form a dynamical system that drives the policy to stay close to demonstrations while advancing along them; executing \(\mathbf{u}\) through the system dynamics produces state evolution \(\int f(x,u)\,dt\).</li>
+              <li>Multiple demonstrations compose naturally via Boolean operations on distance fields, letting the policy align with the most relevant example even under unknown dynamics.</li>
+            </ul>
+          </figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Representation -->
+  <section class="is-light section-compact" id="representation">
+    <div class="section-shell">
+      <div class="content-card">
+        <div class="section-subtitle"><h2>Flexible visual representations</h2></div>
+        <p class="inner-text text-centered narrow">GPI only needs a meaningful distance—Euclidean, geodesic, cosine, or latent—so we can swap in <span class="key-highlight">task-specific encoders</span>, <span class="key-highlight">self-supervised autoencoders</span>, or <span class="key-highlight">pretrained vision backbones</span> without ever touching the controller.</p>
+        <figure class="figure-block mt-32">
+          <img src="vision_features.png" alt="Figure 2 illustrating three ways to obtain latent embeddings for Geometry-Aware Policy Imitation.">
+        </figure>
+      </div>
+    </div>
+  </section>
+  <!-- Policy synthesis -->
+  <section class="is-dark" id="policy-synthesis">
+    <div class="section-shell">
+      <div class="content-card dark text-centered">
+        <div class="section-subtitle"><h2>Non-parametric policy synthesis</h2></div>
+        <p class="inner-text text-centered narrow">Progression and attraction flows superposes a <span class="key-highlight">stable dynamical system</span> in the actuated space, yielding <span class="key-highlight">efficient, interpretable</span> policies.</p>
+        <figure class="figure-block mt-32">
+          <img src="ds.png" alt="Vector-field perspective of GPI combining progression and attraction flows.">
+          <!-- <figcaption class="figure-caption">The resulting vector field steers the policy along demonstrations while correcting deviations, offering fast rollouts even when dynamics are partly unknown.</figcaption> -->
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Example-->
+  <section class="is-dark" id="example">
+    <div class="section-shell">
+      <div class="content-card dark">
+        <div class="section-subtitle"><h2>An 2D example</h2></div>
+        <!-- <p class="inner-text text-centered narrow">
+          Distance fields carve each demonstration into a controllable vector field. Progression keeps motion aligned with expert tangents,
+          while attraction (next section) pulls the system back whenever it drifts.
+        </p> -->
+        <figure class="figure-block mt-28">
+          <img src="2d_example.png" alt="Figure 3 showing demonstrations, distance landscape, and flow fields.">
+          <figcaption class="figure-caption" style="font-size:16px; line-height:1.6;">
+            <strong>From demonstrations to policy flows.</strong>
+            <span style="display:block; margin-top:6px;">(a) Demonstrations define a Y-shaped geometric manifold.</span>
+            <span style="display:block;">(b) Composed distance fields produce an energy landscape encoding proximity to each branch.</span>
+            <span style="display:block;">(c) Pure progression along tangents can drift away from demonstrations.</span>
+            <span style="display:block;">(d) Adding attraction — the negative distance gradient — pulls trajectories back, yielding a stable multimodal vector field.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="is-dark" id="simulation">
+    <div class="section-shell">
+      <div class="content-card dark text-centered">
+        <div class="section-subtitle"><h2>Simulation experiments</h2></div>
+        <p class="inner-text text-centered narrow">Simulation results show how GPI generalises across <span class="key-highlight">PushT, Robomimic</span>, and <span class="key-highlight">Adroit Hand</span> benchmarks.</p>
+        <div class="video-grid">
+          <div class="video-row cols-4">
+            <div class="video-cell">
+              <video class="header-vid" controls preload="metadata" muted>
+                <source src="sim_videos/multimodality_500_5.mp4" type="video/mp4">
+              </video>
+              <figcaption class="video-caption">PushT</figcaption>
+            </div>
+            <div class="video-cell">
+              <video class="header-vid" controls preload="metadata" muted>
+                <source src="sim_videos/multimodality_500_17.mp4" type="video/mp4">
+              </video>
+              <figcaption class="video-caption">PushT</figcaption>
+            </div>
+            <div class="video-cell">
+              <video class="header-vid" controls preload="metadata" muted>
+                <source src="sim_videos/pusht1.mp4" type="video/mp4">
+              </video>
+              <figcaption class="video-caption">PushT</figcaption>
+            </div>
+            <div class="video-cell">
+              <video class="header-vid" controls preload="metadata" muted>
+                <source src="sim_videos/pusht2.mp4" type="video/mp4">
+              </video>
+              <figcaption class="video-caption">PushT</figcaption>
+            </div>
+          </div>
+          <div class="video-row cols-3">
+            <div class="video-cell">
+              <video class="header-vid" controls preload="metadata" muted>
+                <source src="sim_videos/knn_seed_1003_k_3.mp4" type="video/mp4">
+              </video>
+              <figcaption class="video-caption">Robomimic Lift</figcaption>
+            </div>
+            <div class="video-cell">
+              <video class="header-vid" controls preload="metadata" muted>
+                <source src="sim_videos/can_knn_seed_8_k_3.mp4" type="video/mp4">
+              </video>
+              <figcaption class="video-caption">Robomimic Can</figcaption>
+            </div>
+            <div class="video-cell">
+              <video class="header-vid" controls preload="metadata" muted>
+                <source src="sim_videos/square_knn_seed_4_k_3.mp4" type="video/mp4">
+              </video>
+              <figcaption class="video-caption">Robomimic Square</figcaption>
+            </div>
+          </div>
+          <div class="video-row cols-4">
+            <div class="video-cell">
+              <video class="header-vid" controls preload="metadata" muted>
+                <source src="sim_videos/minari_D4RL_door_expert-v2_ep01_seed1000-episode-0.mp4" type="video/mp4">
+              </video>
+              <figcaption class="video-caption">Adroit Hand Door.</figcaption>
+            </div>
+            <div class="video-cell">
+              <video class="header-vid" controls preload="metadata" muted>
+                <source src="sim_videos/minari_D4RL_hammer_expert-v2_ep06_seed1500-episode-0.mp4" type="video/mp4">
+              </video>
+              <figcaption class="video-caption">Adroit Hand Hammer</figcaption>
+            </div>
+            <div class="video-cell">
+              <video class="header-vid" controls preload="metadata" muted>
+                <source src="sim_videos/minari_D4RL_pen_expert-v2_ep03_seed1200-episode-0.mp4" type="video/mp4">
+              </video>
+              <figcaption class="video-caption">Adroit Hand Pen</figcaption>
+            </div>
+            <div class="video-cell">
+              <video class="header-vid" controls preload="metadata" muted>
+                <source src="sim_videos/minari_D4RL_relocate_expert-v2_ep08_seed1700-episode-0.mp4" type="video/mp4">
+              </video>
+              <figcaption class="video-caption">Adroit Hand Relocate</figcaption>
+            </div>
           </div>
         </div>
-
-
-        <!-- Action buttons -->
-        <div class="container" style="gap: 12px; display:flex; justify-content:center; margin-top: 8px;">
-          <a class="highlighted-link arxiv-link" href="GEOMETRY_AWARE_POLICY_IMITATION.pdf" target="_blank" rel="noopener">
-            <span class="icon">📄</span><span>Paper (PDF)</span>
-          </a>
-          <a class="highlighted-link colab-link" href="#bibtex">
-            <span class="icon">📚</span><span>BibTeX</span>
-          </a>
-        </div>
-    </div>
-  </section>
-
-  <!-- Description -->
-  <div class="container" style="font-size:32px; font-weight:bold;">
-    <p>Simple, Fast and Flexible</p>
-  </div>
-  <figure class="figure-block">
-    <img src="main_results.png" alt="Figure 1 from the paper summarizing the GPI pipeline and Push-T results.">
-  <div class="container" style="font-size:24px; font-weight:bold;">
-    <p>Evaluations on PushT Benchmark</p>
-  </div>
-  </figure>
-
-  <!-- Talk -->
-  <a id="talk" class="nav-anchor"></a>
-  <section class="is-dark">
-    <div class="container has-text-centered">
-      <h2 style="font-size:28px; font-weight:700;">Talk</h2>
-      <p class="inner-text">Watch the GPI overview and a real-robot deployment from the paper.</p>
-      <video class="header-vid" controls>
-        <source src="fruit_delivery.mp4" type="video/mp4">
-      </video>
-      <figcaption class="video-caption">Method overview and fruit delivery task: progression and attraction flows cooperate to stay close to demonstrations while navigating clutter.</figcaption>
-      <br>
-      <video class="header-vid" controls>
-        <source src="robot_flip.mp4" type="video/mp4">
-      </video>
-      <figcaption class="video-caption">Real-world box flip on the ALOHA platform, showcasing multimodal demonstrations and robustness to visual disturbances.</figcaption>
-    </div>
-  </section>
-
-  <!-- Motivation -->
-  <a id="motivation" class="nav-anchor"></a>
-  <section class="is-light">
-    <div class="container has-text-centered">
-      <h2 style="font-size:28px; font-weight:700;">Motivation</h2>
-      <p class="inner-text left">
-        Diffusion/flow-matching policies excel but are heavy and opaque. GPI reinterprets demonstrations Γ as
-        <em>geometric curves</em>, builds distance fields <em>d(x | Γ)</em>, and induces two primitives:
-        (i) a <strong>progression flow</strong> along the demo tangent and (ii) an <strong>attraction flow</strong>
-        given by the negative distance gradient. Their superposition yields a controllable, non-parametric vector field
-        that is fast, interpretable, and robust.
-      </p>
-      <figure class="figure-block">
-        <img src="vision_features.png" alt="Figure 2 illustrating three ways to obtain latent embeddings.">
-        <figcaption class="figure-caption">
-          Figure&nbsp;2 in the paper outlines the three feature pipelines we experiment with: a lightweight task-specific encoder,
-          an autoencoder that learns task-agnostic latents, and pretrained models (e.g., CLIP or SAM). GPI only needs the
-          distance in this latent space, so any of these choices can be swapped in without retraining the controller.
-        </figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <!-- Progression flow -->
-  <a id="conditional-flow" class="nav-anchor"></a>
-  <section class="is-dark">
-    <div class="container has-text-centered">
-      <h2 style="font-size:28px; font-weight:700;">Progression flow</h2>
-      <p class="inner-text left">
-        The progression component advances the system along the expert trajectory using its local tangent
-        <code>u_demo(x)</code>. It ensures forward motion and task completion without backtracking.
-      </p>
-      <pre style="text-align:left; max-width:975px; margin:0 auto;"><code>π_prog(x) = λ₁(x) · u_demo(x)</code></pre>
-      <figure class="figure-block">
-        <img src="2d_example.png" alt="Figure 3 showing demonstrations, distance landscape, and flow fields.">
-        <figcaption class="figure-caption">
-          Figure&nbsp;3 from the paper: (a) two demonstrations forming a Y-shape, (b) the composed distance landscape, and (c–d)
-          the induced flow fields. The top row shows pure progression following tangents, while the bottom row adds attraction
-          to pull the policy back toward either branch. The combined field (right) illustrates how GPI produces smooth,
-          bifurcating behavior without training.
-        </figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <!-- Attraction flow -->
-  <a id="marginal-flow" class="nav-anchor"></a>
-  <section class="is-light">
-    <div class="container has-text-centered">
-      <h2 style="font-size:28px; font-weight:700;">Attraction flow</h2>
-      <p class="inner-text left">
-        The attraction component corrects deviations by following the negative gradient of the distance field in the
-        actuated subspace. This stabilizes the dynamics, pulling the state back toward the demonstration manifold.
-      </p>
-      <pre style="text-align:left; max-width:975px; margin:0 auto;"><code>π_attr(x) = − λ₂(x) · ∇<sub>x′</sub> d(x | Γ)</code></pre>
-    </div>
-  </section>
-
-  <!-- Multimodality -->
-  <a id="pusht-multimodality" class="nav-anchor"></a>
-  <section class="is-dark">
-    <div class="container has-text-centered">
-      <h2 style="font-size:28px; font-weight:700;">Multimodality</h2>
-      <p class="inner-text left">
-        GPI preserves distinct demonstrations as separate models and composes the <em>K</em> nearest via soft weights
-        <code>w_i(x) ∝ exp(−β · d(x | Γ(i)))</code>, enabling natural multimodal behavior without mode collapse.
-      </p>
-      <pre style="text-align:left; max-width:975px; margin:0 auto;"><code>π(x) = Σ_i w_i(x) · [ λ₁ u_demo^{(i)}(x) − λ₂ ∇<sub>x′</sub> d(x | Γ(i)) ]</code></pre>
-    </div>
-  </section>
-
-  <!-- Decoupling -->
-  <a id="decoupling-stochasticity" class="nav-anchor"></a>
-  <section class="is-light">
-    <div class="container has-text-centered">
-      <h2 style="font-size:28px; font-weight:700;">Decoupling representation and policy</h2>
-      <p class="inner-text left">
-        We explicitly separate the learned <em>distance metric</em> (from vision/state encoders) from <em>policy synthesis</em>.
-        Encoders can be swapped or fine-tuned independently; the reactive controller remains a simple first-order system.
-      </p>
-    </div>
-  </section>
-
-  <!-- Limitations -->
-  <a id="caveats" class="nav-anchor"></a>
-  <section class="is-dark">
-    <div class="container has-text-centered">
-      <h2 style="font-size:28px; font-weight:700;">Limitations</h2>
-      <p class="inner-text left">
-        GPI relies on meaningful distance fields; poor representation learning can degrade attraction. Extremely long-horizon
-        tasks may require waypointing or light receding-horizon planning. Safety constraints are not enforced by default.
-      </p>
-    </div>
-  </section>
-
-  <!-- Real-world / Results -->
-  <a id="real-world" class="nav-anchor"></a>
-  <section class="is-light">
-    <div class="container has-text-centered">
-      <h2 style="font-size:28px; font-weight:700;">Results</h2>
-      <p class="inner-text">Push-T snapshot (state vs. vision; per-step latency and memory).</p>
-      <div style="width:100%; overflow-x:auto;">
-        <table class="table is-striped is-fullwidth" style="margin: 0 auto; max-width: 975px;">
-          <thead>
-            <tr>
-              <th>Method</th><th>State: Avg/Max</th><th>Train / Infer</th><th>Memory</th>
-              <th>Vision: Avg/Max</th><th>Train / Infer</th><th>Memory</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>DDPM</td><td>82.3 / 86.3</td><td>1.0 h / 641 ms</td><td>252 MB</td><td>80.9 / 85.5</td><td>2.5 h / 647 ms</td><td>353 MB</td></tr>
-            <tr><td>DDIM</td><td>81.5 / 85.1</td><td>1.0 h / 65 ms</td><td>252 MB</td><td>79.1 / 83.1</td><td>2.5 h / 67 ms</td><td>353 MB</td></tr>
-            <tr><td><b>GPI (Ours)</b></td><td><b>85.8 / 89.0</b></td><td><b>0 h / 0.6 ms</b></td><td><b>0.7 MB</b></td>
-                <td><b>83.3 / 86.9</b></td><td><b>0.3 h / 3.3 ms</b></td><td><b>44 MB</b></td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="inner-text">Evaluation follows standard Push-T protocols; latencies are per-step.</p>
-      <p class="inner-text left" style="margin-top:28px;">
-        Figure&nbsp;4 (below) studies receding-horizon rollouts. Even when we plan over 64-step horizons, both state and
-        vision settings retain strong performance, showing the geometric controller can operate reactively or in a longer-horizon
-        mode without degradation.
-      </p>
-      <figure class="figure-block" style="max-width: 640px;">
-        <img src="reward_horizon.png" alt="Figure 4 plotting reward versus action horizon for state and vision inputs.">
-        <figcaption class="figure-caption">
-          Figure&nbsp;4: Reward versus planning horizon. Solid curves show best runs; dashed curves show averages across seeds.
-        </figcaption>
-      </figure>
-      <p class="inner-text left" style="margin-top:32px;">
-        Figure&nbsp;5 (next) highlights how performance scales with demonstration coverage. Whether actions are expressed
-        in a relative or absolute frame, increasing the subset size consistently boosts average reward and remains stable across
-        different neighbor counts <em>K</em>.
-      </p>
-      <figure class="figure-block">
-        <img src="action_subset_size.png" alt="Figure 5 showing average reward versus subset size for relative and absolute actions.">
-        <figcaption class="figure-caption">
-          Figure&nbsp;5: Demonstration density analysis. Each curve corresponds to a different number of blended neighbors.
-        </figcaption>
-      </figure>
-      <p class="inner-text left" style="margin-top:32px;">
-        Figure&nbsp;7 explores the interplay between the progression and attraction primitives. A broad range of weights
-        <em>(λ₁, λ₂)</em> produces high reward, underscoring that the two fields combine smoothly without delicate tuning.
-      </p>
-      <figure class="figure-block" style="max-width: 540px;">
-        <img src="lambda_reward.png" alt="Figure 7 heatmap of average reward as progression and attraction weights vary.">
-        <figcaption class="figure-caption">
-          Figure&nbsp;7: Heatmap of average reward as progression (λ₁) and attraction (λ₂) coefficients vary.
-        </figcaption>
-      </figure>
-      <p class="inner-text left" style="margin-top:32px;">
-        Figures&nbsp;8 and&nbsp;9 showcase the real-robot evaluations described in Section&nbsp;3.2 of the paper. The ALOHA clip
-        (top) captures multiple successful box-flip trajectories, while the Franka arm experiment (bottom) demonstrates human–robot
-        interaction where the robot reacts to a user presenting fruit.
-      </p>
-      <div class="figure-row">
-        <figure class="figure-item">
-          <img src="robot_experiments.png" alt="Figure 8 montage of the ALOHA box-flip trials.">
-          <figcaption class="figure-caption">
-            Figure&nbsp;8: Multiple rollouts of the box-flip task on ALOHA, illustrating multimodal strategies learned from demonstrations.
-          </figcaption>
-        </figure>
-        <figure class="figure-item">
-          <img src="hri.png" alt="Figure 9 showing the Franka arm handing fruit during a human-robot interaction trial.">
-          <figcaption class="figure-caption">
-            Figure&nbsp;9: Human–robot interaction on the Franka platform. The geometry-aware flows adapt to new fruit placements presented by a human partner.
-          </figcaption>
-        </figure>
       </div>
     </div>
   </section>
 
-  <!-- BibTeX -->
-  <a id="paper" class="nav-anchor"></a>
-  <section class="is-dark">
-    <div class="container has-text-centered">
-      <h2 style="font-size:28px; font-weight:700;">BibTeX</h2>
-      <div class="bibtex" id="bibtex">
-        <pre>@inproceedings{anonymous2026gpi,
+  <section class="is-dark" id="bibtex">
+    <div class="section-shell">
+      <div class="content-card dark text-centered">
+        <div class="section-subtitle"><h2>Citation</h2></div>
+        <div class="bibtex-section">
+          <pre>@inproceedings{anonymous2026gpi,
   title     = {Geometry-Aware Policy Imitation},
   author    = {Anonymous},
   booktitle = {International Conference on Learning Representations (ICLR)},
   year      = {2026},
   note      = {Under review}
 }</pre>
-      </div>
-      <a href="#" onclick="toggleBibtex()" class="back-to-top-button" style="background:#4169E1;">Toggle BibTeX</a>
-      <script>
-        function toggleBibtex(){
-          var el = document.getElementById('bibtex');
-          if (el.style.display === 'none') el.style.display = 'block';
-          else el.style.display = 'none';
-        }
-      </script>
-      <div style="margin-top:16px;">
-        <a href="#title" class="back-to-top-button" style="background:#333;">↑ Back to top</a>
+        </div>
+        <a href="#gpi" class="back-to-top-button">↑ Back to top</a>
       </div>
     </div>
   </section>
 
-  <footer style="text-align:center; padding:24px; color:#444;">
+  <footer class="site-footer">
     © 2026 — Geometry-Aware Policy Imitation (GPI).
   </footer>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha384-jN8XjeaUp43EIBgzHuLlHotE5T7V6czS4fFqqpwPIYOvToNiOfPLp8tf4yIm4X5a" crossorigin="anonymous"></script>
