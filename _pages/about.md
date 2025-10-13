@@ -100,7 +100,7 @@ Please visit my [Google Scholar](https://scholar.google.com/citations?user=j9DxN
 arXiv:2510.08787.
 
 <a href="https://arxiv.org/pdf/2510.08787" class="btn btn--danger btn--small">paper</a>
-<a href="https://yimingli1998.github.io/projects/GPI/" class="btn btn--info btn--small">interactive page</a>
+<a href="https://yimingli1998.github.io/projects/GPI/" class="btn btn--info btn--small">project</a>
 <a href="https://github.com/yimingli1998/GPI" class="btn btn--success btn--small">code</a>
 </div>
 </div>
