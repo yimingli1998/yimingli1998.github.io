@@ -93,6 +93,26 @@ Please visit my [Google Scholar](https://scholar.google.com/citations?user=j9DxN
   <img src='images/hrc.png' alt="sym" width="60%">
 </div>
 <div class='paper-box-text' markdown="1">
+**Geometry-aware Policy Imitation**
+
+**Yiming Li**, Nael Darwiche, Amirreza Razmjoo, Sichao Liu, Yilun Du, Auke Ijspeert and Sylvain Calinon
+
+arXiv:2510.08787.
+
+<a href="https://arxiv.org/pdf/2510.08787" class="btn btn--danger btn--small">paper</a>
+<a href="https://yimingli1998.github.io/projects/GPI/" class="btn btn--info btn--small">interactive page</a>
+<a href="https://github.com/yimingli1998/GPI" class="btn btn--success btn--small">code</a>
+</div>
+</div>
+
+<!--  -->
+
+
+<div class='paper-box'>
+<div class='paper-box-image'>
+  <img src='images/hrc.png' alt="sym" width="60%">
+</div>
+<div class='paper-box-text' markdown="1">
 **From Movement Primitives to Distance Fields to Dynamical Systems**
 
 **Yiming Li** and Sylvain Calinon
