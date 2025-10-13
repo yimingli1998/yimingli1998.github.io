@@ -107,3 +107,259 @@ h1:before, .anchor:before {
     background-color: #00369f;
     font-size: .8em;
 }
+
+/* --- Custom styling for personal site polish --- */
+:root {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-heading: "Playfair Display", "Georgia", "Times New Roman", serif;
+  --primary-color: #223b9b;
+  --accent-color: #ef6f6c;
+  --body-text: #1f2533;
+  --muted-text: #5a5f73;
+  --page-bg: #ffffff;
+  --card-bg: #ffffff;
+  --shadow-soft: none;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--body-text);
+  background: var(--page-bg);
+}
+
+.page {
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  margin: 2.25rem auto;
+  max-width: 1040px;
+  flex: 1 1 auto;
+}
+
+.page__content {
+  font-size: 1.04em;
+}
+
+.page__content p {
+  margin-bottom: 1.1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+h1 {
+  font-size: 2.45rem;
+  margin-bottom: 0.65em;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-top: 2.1em;
+  margin-bottom: 0.65em;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.35em;
+  width: 58px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+}
+
+h3 {
+  font-size: 1.35rem;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: var(--primary-color);
+  font-weight: 500;
+  transition: color 0.2s ease, box-shadow 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+  box-shadow: inset 0 -1.5px 0 var(--accent-color);
+  text-decoration: none;
+}
+
+ul li, ol li {
+  margin-bottom: 0.55em;
+}
+
+.sidebar {
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 1.75rem 1.8rem 0 0;
+  margin-top: 2.2rem;
+  max-width: 340px;
+  position: sticky;
+  top: 6.5rem;
+  align-self: flex-start;
+}
+
+.profile_box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  text-align: center;
+}
+
+.profile_box .author__avatar {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(34, 59, 155, 0.12);
+  box-shadow: none;
+  margin: 0 auto;
+}
+
+.profile_box .author__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.author__name {
+  font-family: var(--font-heading);
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 0.22em;
+}
+
+.author__bio {
+  font-size: 1.06rem;
+  color: var(--muted-text);
+}
+
+.author__urls-wrapper {
+  border-top: 1px solid rgba(34, 59, 155, 0.12);
+  padding-top: 1.3rem;
+}
+
+.author__urls li {
+  font-size: 1.02rem;
+  color: var(--muted-text);
+  line-height: 1.45;
+}
+
+.author__urls li i {
+  color: var(--primary-color);
+  margin-right: 0.55rem;
+  font-size: 1.05em;
+}
+
+.author__urls.social-icons {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.paper-box {
+  background: transparent;
+  border-radius: 12px;
+  border: 1px solid rgba(34, 59, 155, 0.1);
+  padding: 1.4rem;
+  box-shadow: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.paper-box .paper-box-image {
+  min-width: 120px;
+  margin-right: 16px;
+}
+
+.paper-box .paper-box-image img {
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(24, 34, 70, 0.12);
+}
+
+.paper-box .paper-box-text {
+  margin: 0;
+}
+
+.btn {
+  border-radius: 999px;
+  padding: 0.5rem 1.4rem;
+  font-weight: 600;
+}
+
+.btn--info {
+  background: linear-gradient(120deg, var(--primary-color), #4d5cc4);
+  border: none;
+}
+
+.btn--success {
+  background: linear-gradient(120deg, #00b894, #00cec9);
+  border: none;
+}
+
+.btn--danger {
+  background: linear-gradient(120deg, var(--accent-color), #f59875);
+  border: none;
+}
+
+.btn:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(24, 34, 70, 0.14);
+}
+
+.page__content blockquote {
+  border-left: 4px solid var(--primary-color);
+  background: rgba(34, 59, 155, 0.06);
+  padding: 1rem 1.4rem;
+  border-radius: 10px;
+  color: var(--primary-color);
+  font-style: italic;
+}
+
+@media (max-width: 1024px) {
+  .page {
+    margin: 1.4rem;
+  }
+
+  .sidebar {
+    margin: 1.4rem 0 0;
+    max-width: none;
+    position: static;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 17px;
+  }
+
+  .page {
+    margin: 1.2rem;
+  }
+
+  .sidebar {
+    padding: 1.3rem 0 0;
+  }
+
+  .paper-box {
+    flex-direction: column;
+  }
+
+  .paper-box .paper-box-image {
+    margin-right: 0;
+    margin-bottom: 0.8rem;
+    width: 100%;
+  }
+}
