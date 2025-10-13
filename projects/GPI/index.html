@@ -53,9 +53,13 @@
     .author-line { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
     .author-line span sup { color: #4169E1; font-size: 0.7em; }
     .highlighted-link { display:inline-flex; align-items:center; padding:10px 20px; color:white; border-radius:25px; font-weight:bold; font-size:16px; text-decoration:none; transition: all 0.3s ease; box-shadow: 0 2px 4px rgba(0,0,0,0.08); gap:8px; }
+    .highlighted-link .icon { display:flex; align-items:center; font-size:18px; }
     .highlighted-link:hover { transform: translateY(-4px); box-shadow: 0 4px 6px rgba(0,0,0,0.18); text-decoration:none; }
     .colab-link { background: linear-gradient(45deg, #2196F3, red); }
     .arxiv-link { background: linear-gradient(45deg, #FFB74D, #FFA726); }
+    .bibtex-link { background:#ffffff; color:#1f2a44; border:1px solid rgba(35,66,216,0.18); box-shadow: 0 2px 8px rgba(35,66,216,0.12); }
+    .bibtex-link .icon { color:#1f2a44; }
+    .bibtex-link:hover { box-shadow: 0 4px 12px rgba(35,66,216,0.18); }
     .inner-text { width: 100%; max-width: 975px; font-size: 20px; text-align: center; margin: 0 auto; }
     .inner-text.hero-lead { font-size: 24px; line-height: 1.7; }
     .text-centered { text-align: center; }
@@ -90,7 +94,14 @@
     .mt-28 { margin-top: 28px; }
     .mt-32 { margin-top: 32px; }
     .mt-36 { margin-top: 36px; }
-    .bibtex pre { background:#f5f6fa; border-radius:8px; padding:16px; color:#2a2f3a; border:1px solid #dfe3ef; font-size:14px; }
+    .reference-list { list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:18px; align-items:center; }
+    .reference-card { width:100%; max-width:780px; background:#ffffff; border-radius:12px; padding:18px 22px; box-shadow:0 12px 28px rgba(33,36,59,0.12); border:1px solid rgba(35,66,216,0.12); display:flex; flex-direction:column; gap:6px; text-align:left; }
+    .reference-title { font-weight:700; color:#1f2a44; font-size:18px; }
+    .reference-meta { font-size:15px; color:#4b4f63; }
+    .reference-card a { color:#2342d8; font-weight:600; }
+    .reference-card a:hover { text-decoration:underline; }
+    .bibtex-section { display:flex; justify-content:center; }
+    .bibtex-section pre { background:#f5f6fa; border-radius:10px; padding:18px 22px; color:#2a2f3a; border:1px solid #dfe3ef; font-size:15px; margin:0; text-align:left; max-width:720px; width:100%; font-family:"Source Code Pro","Fira Code","Courier New",monospace; white-space:pre-wrap; }
     .site-footer { text-align:center; padding:24px; color:#444; font-size:14px; }
     .nav-anchor { display:block; position:absolute; width:0; height:0; z-index:-1; top:-38px; left:0; visibility:hidden; }
     .back-to-top-button { display:inline-flex; align-items:center; padding:10px 20px; color:white; text-decoration:none; border-radius:25px; font-size:16px; transition: all 0.2s ease; box-shadow: 0 2px 4px rgba(0,0,0,0.1); background: linear-gradient(120deg,#2d3566,#0f1429); }
@@ -160,7 +171,7 @@
             <sup>1</sup> Idiap Research Institute &nbsp;|&nbsp; <sup>2</sup> EPFL &nbsp;|&nbsp; <sup>3</sup> Harvard University
           </div>
           <div class="hero-actions">
-            <a class="highlighted-link arxiv-link" href="GEOMETRY_AWARE_POLICY_IMITATION.pdf" target="_blank" rel="noopener">
+            <a class="highlighted-link arxiv-link" href="https://arxiv.org/abs/2510.08787" target="_blank" rel="noopener">
               <span class="icon">📄</span><span>Paper (PDF)</span>
             </a>
             <a class="highlighted-link colab-link" href="https://github.com/yimingli1998/GPI" target="_blank" rel="noopener">
@@ -373,18 +384,38 @@
     </div>
   </section>
 
+  <section class="is-light section-compact" id="references">
+    <div class="section-shell">
+      <div class="content-card">
+        <div class="section-subtitle"><h2>References</h2></div>
+        <ul class="reference-list">
+          <li class="reference-card">
+            <div class="reference-title">Diffusion Policy: Visuomotor Policy Learning via Action Diffusion</div>
+            <div class="reference-meta">Chi et al., 2023 · International Journal of Robotics Research (IJRR)</div>
+            <a href="https://diffusion-policy.cs.columbia.edu/" target="_blank" rel="noopener">Project page</a>
+          </li>
+          <li class="reference-card">
+            <div class="reference-title">From Movement Primitives to Distance Fields to Dynamical Systems</div>
+            <div class="reference-meta">Li &amp; Calinon, 2025 · IEEE Robotics and Automation Letters (RA-L)</div>
+            <a href="https://idiap.github.io/mp-df-ds/" target="_blank" rel="noopener">Project page</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <section class="is-dark" id="bibtex">
     <div class="section-shell">
       <div class="content-card dark text-centered">
         <div class="section-subtitle"><h2>Citation</h2></div>
         <div class="bibtex-section">
-          <pre>@inproceedings{anonymous2026gpi,
-  title     = {Geometry-Aware Policy Imitation},
-  author    = {Anonymous},
-  booktitle = {International Conference on Learning Representations (ICLR)},
-  year      = {2026},
-  note      = {Under review}
-}</pre>
+          <pre>@misc{2510.08787,
+Author = {Yiming Li and Nael Darwiche and Amirreza Razmjoo and Sichao Liu and Yilun Du and Auke Ijspeert and Sylvain Calinon},
+Title = {Geometry-aware Policy Imitation},
+Year = {2025},
+Eprint = {arXiv:2510.08787},
+}
+</pre>
         </div>
         <a href="#gpi" class="back-to-top-button">↑ Back to top</a>
       </div>
