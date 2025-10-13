@@ -140,7 +140,7 @@ IEEE Robotics and Automation Letters (RA-L).
 arXiv:2412.05197.
 
 <a href="https://arxiv.org/pdf/2412.05197" class="btn btn--danger btn--small">paper</a>
-<a href="https://sites.google.com/view/geodf" class="btn btn--info btn--small">website</a>
+<a href="https://sites.google.com/view/geodf" class="btn btn--info btn--small">project</a>
 </div>
 </div>
 
@@ -160,7 +160,7 @@ In Proc. Robotics: Science and Systems 2024 (RSS 2024).
 <span style="color:red;">Best Paper Award Finalist</span>
 
 <a href="https://arxiv.org/pdf/2406.01137" class="btn btn--danger btn--small">paper</a>
-<a href="https://sites.google.com/view/cdfmp" class="btn btn--info btn--small">website</a>
+<a href="https://sites.google.com/view/cdfmp" class="btn btn--info btn--small">project</a>
 <a href="https://github.com/idiap/cdf" class="btn btn--success btn--small">code</a>
 </div>
 </div>
@@ -179,7 +179,7 @@ Ante Marić, **Yiming Li**, Sylvain Calinon
 IEEE Robotics and Automation Letters (RA-L), 9 (6), 6020-6026.
 
 <a href="https://arxiv.org/pdf/2401.07698" class="btn btn--danger btn--small">paper</a>
-<a href="https://sites.google.com/view/pp-sdf" class="btn btn--info btn--small">website</a>
+<a href="https://sites.google.com/view/pp-sdf" class="btn btn--info btn--small">project</a>
 <a href="https://github.com/idiap/ppsdf" class="btn btn--success btn--small">code</a>
 </div>
 </div>
@@ -198,7 +198,7 @@ IEEE Robotics and Automation Letters (RA-L), 9 (6), 6020-6026.
 In Proc. IEEE Intl Conf. on Robotics and Automation 2024 (ICRA 2024).
 
 <a href="https://arxiv.org/pdf/2307.00533" class="btn btn--danger btn--small">paper</a>
-<a href="https://sites.google.com/view/lrdf" class="btn btn--info btn--small">website</a>
+<a href="https://sites.google.com/view/lrdf" class="btn btn--info btn--small">project</a>
 <a href="https://github.com/idiap/RDF" class="btn btn--success btn--small">code</a>
 </div>
 </div>
