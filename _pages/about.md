@@ -49,10 +49,12 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-My name is Yiming Li. I am currently a third year PhD student in the [Robot Learning & Interaction group](https://idiap.ch/rli/) at the [Idiap Research Institute](https://www.idiap.ch/en) and [École Polytechnique Fédérale de Lausanne (EPFL)](https://www.epfl.ch/en/), supervised by [Dr. Sylvain Calinon](https://calinon.ch/). 
+My name is Yiming Li. I am a last year PhD student in the [Robot Learning & Interaction group](https://idiap.ch/rli/) at the [Idiap Research Institute](https://www.idiap.ch/en) and [École Polytechnique Fédérale de Lausanne (EPFL)](https://www.epfl.ch/en/), supervised by [Dr. Sylvain Calinon](https://calinon.ch/). 
 <!-- Prior to this, I obtained my Master's degree from the Institute of Automation, Chinese Academy of Sciences, and my Bachelor's degree from Tongji University. -->
 
 My research focuses on robot manipulation in unstructured environments, aiming to advance robotic capabilities for real-world deployment. To this end, I develop intelligent, embodied systems through work in robot learning, motion planning, 3D perception, and optimal control.
+
+I am on job market primarily looking for postdocs and industry research scientist positions. Feel free to reach out!
 
 <!-- I am broadly interested in planning, manipulation, and learning for robotic systems that interact with their surroundings and humans. Currently, my focus is on geometric representations for learning and optimization. During my master's, I worked on learning-based approaches for robotic grasping in cluttered environments. -->
 <!-- 
@@ -74,7 +76,7 @@ I welcome the opportunity to listen to others and exchange ideas. Please feel fr
 
 - *2024.01*: [Robot geometry as distance fields](https://arxiv.org/pdf/2307.00533) accepted to ICRA 2024
 
-- *2022.10*: Started PhD at [Robot Learning & Interaction group](https://idiap.ch/rli/)
+<!-- - *2022.10*: Started PhD at [Robot Learning & Interaction group](https://idiap.ch/rli/)
 
 - *2022.08*: [Human-to-robot handovers](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9870872) accepted to IEEE T-CDS
 
@@ -82,7 +84,7 @@ I welcome the opportunity to listen to others and exchange ideas. Please feel fr
 
 - *2022.01*: [Anthropomorphic hand grasping in clutter](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9811756) accepted to ICRA 2022
 
-- *2021.07*: [6-DoF grasp pose estimation](https://arxiv.org/pdf/2108.02425) accepted to IROS 2022
+- *2021.07*: [6-DoF grasp pose estimation](https://arxiv.org/pdf/2108.02425) accepted to IROS 2022 -->
 
 # 📝 Selected Publications 
 
