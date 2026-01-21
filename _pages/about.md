@@ -9,35 +9,81 @@ redirect_from:
 ---
 
 <style>
+.page__content {
+  color: #1f2933;
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+.page__content h1 {
+  border-bottom: 1px solid #e4e7eb;
+  font-size: 1.4rem;
+  letter-spacing: 0.02em;
+  margin-top: 2rem;
+  padding-bottom: 0.35rem;
+}
+.page__content a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.page__content ul {
+  margin-top: 0.4rem;
+  padding-left: 1.2rem;
+}
+.page__content li {
+  margin-bottom: 0.35rem;
+}
 .paper-box {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 1em;
-  align-items: flex-start;
+  align-items: start;
+  background: linear-gradient(180deg, #fcfcfd 0%, #f6f7f9 100%);
+  border: 1px solid #e6e9ef;
+  border-radius: 10px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 110px 1fr;
+  margin: 1rem 0;
+  padding: 0.9rem 1rem;
 }
 .paper-box-image {
-  min-width: 100px;
-  margin-right: 0px;
-  text-align: left;
-  flex: 0 0 auto;
-  width: 10%;
+  min-width: 110px;
+  text-align: center;
+  width: 110px;
 }
 .paper-box-text {
-  padding-left: 0;
   margin: 0;
-  width: 90%;
-  flex: 1;
 }
 .paper-box-text p {
   margin-bottom: 0.25em;
 }
 .paper-box-image img {
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(31, 41, 51, 0.12);
   display: block;
   margin: 0 auto;
+  width: 100%;
 }
 .btn {
   margin-bottom: 0.25em;
   margin-right: 0.25em;
+}
+.page__content .btn {
+  border-radius: 999px;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  padding: 0.2em 0.7em;
+  text-transform: uppercase;
+}
+@media (max-width: 700px) {
+  .paper-box {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+  .paper-box-image {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .paper-box-image img {
+    max-width: 140px;
+  }
 }
 </style>
 
@@ -66,6 +112,8 @@ I welcome the opportunity to listen to others and exchange ideas. Please feel fr
 
 
 # 🔥 News
+- *2026.01*: [A Riemannian Take on Distance Fields and Geodesic Flows in Robotics](https://arxiv.org/pdf/2504.09705) - accepted to IJRR
+
 - *2025.07*: [From Movement Primitives to Distance Fields to Dynamical Systems](https://arxiv.org/pdf/2504.09705) - accepted to RAL
 
 - *2024.07*: [Configuration space distance fields](https://arxiv.org/pdf/2406.01137) - Best Paper Finalist at RSS 2024!
@@ -89,6 +137,26 @@ I welcome the opportunity to listen to others and exchange ideas. Please feel fr
 # 📝 Selected Publications 
 
 Please visit my [Google Scholar](https://scholar.google.com/citations?user=j9DxNmMAAAAJ&hl=en) page for full publications.
+
+<!--  -->
+
+<div class='paper-box'>
+<div class='paper-box-image'>
+  <img src='images/GeoMP.png' alt="sym" width="60%">
+</div>
+<div class='paper-box-text' markdown="1">
+**A Riemannian Take on Distance Fields and Geodesic Flows in Robotics**
+
+**Yiming Li**, Jiacheng Qiu, Sylvain Calinon
+
+International Journal of Robotics Research (IJRR).
+
+<a href="https://arxiv.org/pdf/2412.05197" class="btn btn--danger btn--small">paper</a>
+<a href="https://sites.google.com/view/geodf" class="btn btn--info btn--small">project</a>
+</div>
+</div>
+<!--  -->
+
 
 <div class='paper-box'>
 <div class='paper-box-image'>
@@ -124,25 +192,6 @@ IEEE Robotics and Automation Letters (RA-L).
 <a href="https://arxiv.org/pdf/2504.09705" class="btn btn--danger btn--small">paper</a>
 <a href="https://idiap.github.io/mp-df-ds/" class="btn btn--info btn--small">interactive page</a>
 <a href="https://github.com/idiap/mp-df-ds" class="btn btn--success btn--small">code</a>
-</div>
-</div>
-
-<!--  -->
-
-
-<div class='paper-box'>
-<div class='paper-box-image'>
-  <img src='images/GeoMP.png' alt="sym" width="60%">
-</div>
-<div class='paper-box-text' markdown="1">
-**A Riemannian Take on Distance Fields and Geodesic Flows in Robotics**
-
-**Yiming Li**, Jiacheng Qiu, Sylvain Calinon
-
-arXiv:2412.05197.
-
-<a href="https://arxiv.org/pdf/2412.05197" class="btn btn--danger btn--small">paper</a>
-<a href="https://sites.google.com/view/geodf" class="btn btn--info btn--small">project</a>
 </div>
 </div>
 
