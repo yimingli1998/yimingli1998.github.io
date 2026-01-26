@@ -21,7 +21,7 @@ My name is Yiming Li. I am a last year PhD student in the [Robot Learning & Inte
 
 My research focuses on robot manipulation in unstructured environments, aiming to advance robotic capabilities for real-world deployment. To this end, I develop intelligent, embodied systems through work in robot learning, motion planning, 3D perception, and optimal control.
 
-I am on job market primarily looking for postdocs and industry research scientist positions. Feel free to reach out!
+<span style="color: #c01818;">I am on job market primarily looking for research scientist positions and postdocs. Feel free to reach out!</span>
 
 <!-- I am broadly interested in planning, manipulation, and learning for robotic systems that interact with their surroundings and humans. Currently, my focus is on geometric representations for learning and optimization. During my master's, I worked on learning-based approaches for robotic grasping in cluttered environments. -->
 <!-- 
@@ -33,17 +33,19 @@ I welcome the opportunity to listen to others and exchange ideas. Please feel fr
 
 
 # 🔥 News
-- *2026.01*: [A Riemannian Take on Distance Fields and Geodesic Flows in Robotics](https://arxiv.org/pdf/2504.09705) - accepted to IJRR
+- *2026.01*: [Geometry-aware Policy Imitation](https://arxiv.org/pdf/2504.09705) - accepted to **ICLR 2026**. See you in Rio de Janeiro! 
 
-- *2025.07*: [From Movement Primitives to Distance Fields to Dynamical Systems](https://arxiv.org/pdf/2504.09705) - accepted to RAL
+- *2026.01*: [A Riemannian Take on Distance Fields and Geodesic Flows in Robotics](https://arxiv.org/pdf/2504.09705) - accepted to **IJRR**
 
-- *2024.07*: [Configuration space distance fields](https://arxiv.org/pdf/2406.01137) - Best Paper Finalist at RSS 2024!
+- *2025.07*: [From Movement Primitives to Distance Fields to Dynamical Systems](https://arxiv.org/pdf/2504.09705) - accepted to **RAL**. See you in Vienna!
 
-- *2024.05*: [Configuration space distance fields](https://arxiv.org/pdf/2406.01137) accepted to RSS 2024
+- *2024.07*: [Configuration space distance fields](https://arxiv.org/pdf/2406.01137) - **Best Paper Award Finalist at RSS 2024**!
 
-- *2024.04*: [Online learning signed distance fields](https://arxiv.org/pdf/2401.07698) accepted to RA-L
+- *2024.05*: [Configuration space distance fields](https://arxiv.org/pdf/2406.01137) accepted to **RSS 2024**
 
-- *2024.01*: [Robot geometry as distance fields](https://arxiv.org/pdf/2307.00533) accepted to ICRA 2024
+- *2024.04*: [Online learning signed distance fields](https://arxiv.org/pdf/2401.07698) accepted to **RA-L**
+
+- *2024.01*: [Robot geometry as distance fields](https://arxiv.org/pdf/2307.00533) accepted to **ICRA 2024**
 
 <!-- - *2022.10*: Started PhD at [Robot Learning & Interaction group](https://idiap.ch/rli/)
 
@@ -63,6 +65,26 @@ Please visit my [Google Scholar](https://scholar.google.com/citations?user=j9DxN
 
 <div class='paper-box'>
 <div class='paper-box-image'>
+  <img src='projects/GPI/robot_experiments.png' alt="sym" width="60%">
+</div>
+<div class='paper-box-text' markdown="1">
+**Geometry-aware Policy Imitation**
+
+**Yiming Li**, Nael Darwiche, Amirreza Razmjoo, Sichao Liu, Yilun Du, Auke Ijspeert and Sylvain Calinon
+
+International Conference on Learning Representations 2026 (ICLR 2026).
+
+<a href="https://arxiv.org/pdf/2510.08787" class="btn btn--danger btn--small">paper</a>
+<a href="https://yimingli1998.github.io/projects/GPI/" class="btn btn--info btn--small">project</a>
+<a href="https://github.com/yimingli1998/GPI" class="btn btn--success btn--small">code</a>
+</div>
+</div>
+
+<!--  -->
+
+
+<div class='paper-box'>
+<div class='paper-box-image'>
   <img src='images/GeoMP.png' alt="sym" width="60%">
 </div>
 <div class='paper-box-text' markdown="1">
@@ -76,26 +98,6 @@ International Journal of Robotics Research (IJRR).
 <a href="https://sites.google.com/view/geodf" class="btn btn--info btn--small">project</a>
 </div>
 </div>
-<!--  -->
-
-
-<div class='paper-box'>
-<div class='paper-box-image'>
-  <img src='projects/GPI/robot_experiments.png' alt="sym" width="60%">
-</div>
-<div class='paper-box-text' markdown="1">
-**Geometry-aware Policy Imitation**
-
-**Yiming Li**, Nael Darwiche, Amirreza Razmjoo, Sichao Liu, Yilun Du, Auke Ijspeert and Sylvain Calinon
-
-arXiv:2510.08787.
-
-<a href="https://arxiv.org/pdf/2510.08787" class="btn btn--danger btn--small">paper</a>
-<a href="https://yimingli1998.github.io/projects/GPI/" class="btn btn--info btn--small">project</a>
-<a href="https://github.com/yimingli1998/GPI" class="btn btn--success btn--small">code</a>
-</div>
-</div>
-
 <!--  -->
 
 
