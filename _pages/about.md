@@ -16,12 +16,17 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-My name is Yiming Li. I am a last year PhD student in the [Robot Learning & Interaction group](https://idiap.ch/rli/) at the [Idiap Research Institute](https://www.idiap.ch/en) and [École Polytechnique Fédérale de Lausanne (EPFL)](https://www.epfl.ch/en/), supervised by [Dr. Sylvain Calinon](https://calinon.ch/). 
+My name is Yiming Li. I am a final-year PhD student in the <a href="https://idiap.ch/rli/">Robot Learning & Interaction group</a> at the <a href="https://www.idiap.ch/en">Idiap Research Institute</a> and <a href="https://www.epfl.ch/en/">École Polytechnique Fédérale de Lausanne (EPFL)</a>, supervised by <a href="https://calinon.ch/">Dr. Sylvain Calinon</a>.
 <!-- Prior to this, I obtained my Master's degree from the Institute of Automation, Chinese Academy of Sciences, and my Bachelor's degree from Tongji University. -->
 
-My research focuses on robot manipulation in unstructured environments, aiming to advance robotic capabilities for real-world deployment. To this end, I develop intelligent, embodied systems through work in robot learning, motion planning, 3D perception, and optimal control.
+I work on <strong>learning representations for robotics</strong> to enable robust robot manipulation in unstructured environments. A central challenge is to learn representations that support <em>reasoning</em>, <em>efficiency</em>, and <em>generalization</em> for real-world deployment. My research spans robot learning, computer visoin, motion planning, and optimization, with three focus areas:
 
-<span style="color: #c01818;">I am on job market primarily looking for research scientist positions and postdocs. Feel free to reach out!</span>
+- <strong>Spatial reasoning</strong> (ICRA’24, RSS’24): Real-world manipulation is inherently 3D, so spatial understanding is critical for transferring skills across new objects, layouts, and interactions.
+- <strong>Geometry-aware decision-making</strong> (RAL’25, ICLR’26, IJRR’26): Robotics is inherently geometric, and leveraging geometric structure is essential for fast, stable, and deployable decisions.
+- <strong>Multimodal learning</strong> (RAL’22, ICRA’22, IROS’21): Multimodality is essential for robot manipulation tasks because it grounds semantics and affordances and connects naturally to language-conditioned decision-making.
+
+<span style="color: #c01818;"><strong>I am on the job market</strong>, primarily seeking research scientist positions and postdoctoral opportunities. Feel free to reach out!</span>
+
 
 <!-- I am broadly interested in planning, manipulation, and learning for robotic systems that interact with their surroundings and humans. Currently, my focus is on geometric representations for learning and optimization. During my master's, I worked on learning-based approaches for robotic grasping in cluttered environments. -->
 <!-- 
