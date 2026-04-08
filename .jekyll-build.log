@@ -1,0 +1,298 @@
+Configuration file: /home/yiming/Desktop/yimingli1998.github.io/_config.yml
+            Source: /home/yiming/Desktop/yimingli1998.github.io
+       Destination: /home/yiming/Desktop/yimingli1998.github.io/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+[33m   GitHub Metadata: No GitHub API authentication could be found. Some fields may be missing or have incorrect data.[0m
+                    done in 4.447 seconds.
+ Auto-regeneration: enabled for '/home/yiming/Desktop/yimingli1998.github.io'
+      Regenerating: 1 file(s) changed at 2026-04-09 06:17:12
+                    _includes/sections/library.md
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.033920158 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:17:16
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.024322309 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-04-09 06:17:20
+                    .jekyll-build.log
+                    _pages/software.md
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.065250043 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:17:24
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.155212605 seconds.
+                    
+      Regenerating: 3 file(s) changed at 2026-04-09 06:17:29
+                    .jekyll-build.log
+                    _pages/about.md
+                    _pages/software.md
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.056655731 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-04-09 06:17:33
+                    .jekyll-build.log
+                    _data/navigation.yml
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.083021716 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:17:37
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.136017386 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:17:41
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.127685133 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:17:46
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.046572554 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:17:50
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.372617918 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:17:54
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.27680572 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:17:59
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.161180477 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:18:03
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.011067473 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:18:07
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+[31m  Liquid Exception: Could not locate the included file 'sections/library.md' in any of ["/home/yiming/Desktop/yimingli1998.github.io/_includes", "/home/yiming/gems/gems/jekyll-theme-primer-0.5.4/_includes"]. Ensure it exists in one of those directories and is not a symlink as those are not allowed in safe mode. in _pages/software.md[0m
+[33m             Error: Could not locate the included file 'sections/library.md' in any of ["/home/yiming/Desktop/yimingli1998.github.io/_includes", "/home/yiming/gems/gems/jekyll-theme-primer-0.5.4/_includes"]. Ensure it exists in one of those directories and is not a symlink as those are not allowed in safe mode.[0m
+[33m             Error: Run jekyll build --trace for more information.[0m
+                    
+      Regenerating: 5 file(s) changed at 2026-04-09 06:18:10
+                    .jekyll-build.log
+                    _pages/software.md
+                    _pages/about.md
+                    _data/navigation.yml
+                    _includes/sections/library.md
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.034935389 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:18:14
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 3.998104644 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:18:18
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 3.974577335 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:18:22
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 3.962858764 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:18:27
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.043949958 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:18:31
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.236372056 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:18:35
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.341490702 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:18:39
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.273964684 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:18:44
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.126885526 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:18:48
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.006258837 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:18:52
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 3.998309018 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:18:56
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.082168664 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:19:00
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.069266346 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:19:05
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.090305017 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:19:09
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.034098383 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:19:13
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.100376482 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:19:17
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.145618902 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:19:21
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.116799791 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:19:26
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.065162944 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:19:30
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.157014399 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:19:34
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.121008106 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:19:38
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.074013982 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:19:42
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.068469907 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:19:47
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.063359732 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:19:51
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.050084135 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:19:55
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.108143175 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:19:59
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.094951486 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:20:03
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.037303709 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:20:07
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.128930785 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-04-09 06:20:12
+                    .jekyll-build.log
+                    _includes/masthead.html
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.079365916 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:20:16
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.12257557 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:20:20
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.244338068 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:20:24
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.112551105 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:20:29
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.068858083 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:20:33
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.071183225 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:20:37
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.101668725 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:20:41
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 3.980035613 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:20:45
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.021359583 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:20:49
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.327685965 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:20:54
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.485384165 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:20:58
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.194410949 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2026-04-09 06:21:03
+                    .jekyll-build.log
+       Jekyll Feed: Generating feed for posts

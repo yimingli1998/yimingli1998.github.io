@@ -25,7 +25,7 @@ I work on <strong>learning representations for robotics</strong> to enable robus
 - <strong>Geometry-aware decision-making</strong> (RAL’25, ICLR’26, IJRR’26): Robotics is inherently geometric, and leveraging geometric structure is essential for fast, stable, and deployable decisions.
 - <strong>Multimodal learning</strong> (RAL’22, ICRA’22, IROS’21): Multimodality is essential for robot manipulation tasks because it grounds semantics and affordances and connects naturally to language-conditioned decision-making.
 
-<span style="color: #c01818;"><strong>I am on the job market</strong>, primarily seeking research scientist positions and postdoctoral opportunities. Feel free to reach out!</span>
+<span style="color: #c01818;">I’m currently building something new and always happy to connect with those interested in my work. Feel free to reach out!</span>
 
 
 <!-- I am broadly interested in planning, manipulation, and learning for robotic systems that interact with their surroundings and humans. Currently, my focus is on geometric representations for learning and optimization. During my master's, I worked on learning-based approaches for robotic grasping in cluttered environments. -->
@@ -246,7 +246,6 @@ In Proc. IEEE/RSJ Intl Conf. on Intelligent Robots and Systems 2022 (IROS 2022).
 <a href="https://arxiv.org/pdf/2108.02425" class="btn btn--danger btn--small">paper</a>
 </div>
 </div>
-
 
 <!-- # 🎖 Honors and Awards
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
