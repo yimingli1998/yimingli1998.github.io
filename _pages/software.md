@@ -1,13 +1,13 @@
 ---
 permalink: /software/
-title: "Library"
+title: "Libraries"
 excerpt: "Libraries developed by Yiming Li"
 author_profile: true
 redirect_from:
   - /software
 ---
 
-# Library
+# Libraries
 
 This page highlights selected research libraries and reference implementations for geometry-aware robot learning, manipulation planning, and imitation. 
 

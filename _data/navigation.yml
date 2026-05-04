@@ -9,11 +9,11 @@ main:
   - title: "Publications"
     url: "/#-selected-publications"
 
-  - title: "Library"
+  - title: "Libraries"
     url: "/software"
 
-  # - title: "Videos"
-  #   url: "/videos"
+  - title: "Videos"
+    url: "/videos"
 
   # - title: "Honors and Awards"
   #   url: "/#-honors-and-awards"
