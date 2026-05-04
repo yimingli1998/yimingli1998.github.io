@@ -38,9 +38,9 @@ I welcome the opportunity to listen to others and exchange ideas. Please feel fr
 
 
 # 🔥 News
-- *2026.01*: [Geometry-aware Policy Imitation](https://arxiv.org/pdf/2504.09705) - accepted to **ICLR 2026**. See you in Rio de Janeiro! 
+- *2026.01*: [Geometry-aware Policy Imitation](https://arxiv.org/pdf/2510.08787) - accepted to **ICLR 2026**. See you in Rio de Janeiro! 
 
-- *2026.01*: [A Riemannian Take on Distance Fields and Geodesic Flows in Robotics](https://arxiv.org/pdf/2504.09705) - accepted to **IJRR**
+- *2026.01*: [A Riemannian Take on Distance Fields and Geodesic Flows in Robotics](https://arxiv.org/pdf/2412.05197) - accepted to **IJRR**
 
 - *2025.07*: [From Movement Primitives to Distance Fields to Dynamical Systems](https://arxiv.org/pdf/2504.09705) - accepted to **RAL**. See you in Vienna!
 
