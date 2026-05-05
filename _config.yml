@@ -22,9 +22,10 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Yiming Li"
-  avatar           : images/avatar.jpg
-  bio              : idiap / EPFL 
+  avatar           : images/new_avatar.jpg
+  bio              : Robot Learning
   location         : Martigny, Switzerland
+  location_url     : https://www.google.com/maps/search/?api=1&query=Martigny%2C%20Switzerland
   employer         :
   pubmed           : 
   googlescholar    : https://scholar.google.com/citations?user=j9DxNmMAAAAJ&hl=en

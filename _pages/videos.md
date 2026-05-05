@@ -23,7 +23,7 @@ My long-term vision is to build robotic foundation models that transfer across t
         <video controls muted preload="metadata" playsinline>
           <source src="{{ '/videos/pick and place clutter.mp4' | relative_url }}" type="video/mp4">
         </video>
-        <figcaption class="video-library-caption">Pick and place in clutter</figcaption>
+        <figcaption class="video-library-caption">Pick and place in dense clutter</figcaption>
       </figure>
       <figure class="video-library-item">
         <video controls muted preload="metadata" playsinline>
@@ -37,20 +37,20 @@ My long-term vision is to build robotic foundation models that transfer across t
   <section class="video-library-section">
     <div class="video-library-section-header">
       <h2>Human-Robot Interaction and Safety</h2>
-      <!-- <p>Commercial robots must operate around people, uncertainty, and changing environments. These examples show responsive interaction, adaptation, and collision-aware behavior, forming the safety and trust layer required for deployment beyond isolated workcells.</p>
-    </div> -->
+      <!-- <p>Commercial robots must operate around people, uncertainty, and changing environments. These examples show responsive interaction, adaptation, and collision-aware behavior, forming the safety and trust layer required for deployment beyond isolated workcells.</p> -->
+    </div>
     <div class="video-library-grid">
       <figure class="video-library-item">
         <video controls muted preload="metadata" playsinline>
           <source src="{{ '/videos/adaptive human robot interaction.mp4' | relative_url }}" type="video/mp4">
         </video>
-        <figcaption class="video-library-caption">Adaptive human-robot interaction</figcaption>
+        <figcaption class="video-library-caption">Adaptive human-robot interaction for fruit delivery</figcaption>
       </figure>
       <figure class="video-library-item">
         <video controls muted preload="metadata" playsinline>
           <source src="{{ '/videos/safety_collision_avoidance.mp4' | relative_url }}" type="video/mp4">
         </video>
-        <figcaption class="video-library-caption">Safety and collision avoidance</figcaption>
+        <figcaption class="video-library-caption">Safety behavior for collision avoidance</figcaption>
       </figure>
     </div>
   </section>
@@ -78,7 +78,7 @@ My long-term vision is to build robotic foundation models that transfer across t
 
   <section class="video-library-section">
     <div class="video-library-section-header">
-      <h2>Dexterous Hands and Embodiment</h2>
+      <h2>Dexterous Hands</h2>
       <!-- <p>Dexterous hands expand the range of objects and tasks a robot can handle. This work links embodiment, teleoperation, and robot learning, creating a foundation for collecting useful data and transferring complex manipulation skills to capable hardware.</p> -->
     </div>
     <div class="video-library-grid">
@@ -92,7 +92,7 @@ My long-term vision is to build robotic foundation models that transfer across t
         <video controls muted preload="metadata" playsinline>
           <source src="{{ '/videos/teleoperation_dexterous_hand.mp4' | relative_url }}" type="video/mp4">
         </video>
-        <figcaption class="video-library-caption">Teleoperation for dexterous hands</figcaption>
+        <figcaption class="video-library-caption">Teleoperation</figcaption>
       </figure>
     </div>
   </section>
