@@ -25,7 +25,16 @@ I work on <strong>learning representations for robotics</strong> to enable robus
 - <strong>Geometry-aware decision-making</strong> (RAL’25, ICLR’26, IJRR’26): Robotics is inherently geometric, and leveraging geometric structure is essential for fast, stable, and deployable decisions.
 - <strong>Multimodal learning</strong> (RAL’22, ICRA’22, IROS’21): Multimodality is essential for robot manipulation tasks because it grounds semantics and affordances and connects naturally to language-conditioned decision-making.
 
-<span style="color: #c01818;">I’m currently building something new and always happy to connect with those interested in my work. Feel free to reach out!</span>
+<!-- <span style="color: #c01818;">I’m currently building something new and always happy to connect with those interested in my work. Feel free to reach out!</span> -->
+
+
+<div style="margin: 1.05rem 0 1.55rem; padding: 0.78rem 0.95rem 0.75rem; border-left: 3px solid #b07a2a; border-radius: 4px; background: linear-gradient(90deg, rgba(176, 122, 42, 0.08), rgba(36, 82, 122, 0.035)); color: #2b3038;">
+  <div style="margin-bottom: 0.35rem; color: #143450; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 1.08rem; font-weight: 600; line-height: 1.25;">Research highlights</div>
+  <ul style="margin: 0; padding-left: 1.05rem;">
+    <li style="margin-bottom: 0.34rem; line-height: 1.48;"><strong style="color: #5f3f13;">IJRR 2025-2026 Q3 Paper of the Season</strong>: <a href="https://arxiv.org/pdf/2412.05197">A Riemannian Take on Distance Fields and Geodesic Flows in Robotics</a>, first author.</li>
+    <li style="margin-bottom: 0; line-height: 1.48;"><strong style="color: #5f3f13;">RSS 2024 Best Paper Award Finalist</strong>: <a href="https://arxiv.org/pdf/2406.01137">Configuration Space Distance Fields for Manipulation Planning</a>, first author.</li>
+  </ul>
+</div>
 
 
 <!-- I am broadly interested in planning, manipulation, and learning for robotic systems that interact with their surroundings and humans. Currently, my focus is on geometric representations for learning and optimization. During my master's, I worked on learning-based approaches for robotic grasping in cluttered environments. -->
@@ -37,7 +46,7 @@ I work on <strong>learning representations for robotics</strong> to enable robus
 I welcome the opportunity to listen to others and exchange ideas. Please feel free to drop me an email if you want to discuss anything with me! -->
 
 
-# 🔥 News
+<!-- # 🔥 News
 - *2026.01*: [Geometry-aware Policy Imitation](https://arxiv.org/pdf/2510.08787) - accepted to **ICLR 2026**. See you in Rio de Janeiro! 
 
 - *2026.01*: [A Riemannian Take on Distance Fields and Geodesic Flows in Robotics](https://arxiv.org/pdf/2412.05197) - accepted to **IJRR**
@@ -50,7 +59,7 @@ I welcome the opportunity to listen to others and exchange ideas. Please feel fr
 
 - *2024.04*: [Online learning signed distance fields](https://arxiv.org/pdf/2401.07698) accepted to **RA-L**
 
-- *2024.01*: [Robot geometry as distance fields](https://arxiv.org/pdf/2307.00533) accepted to **ICRA 2024**
+- *2024.01*: [Robot geometry as distance fields](https://arxiv.org/pdf/2307.00533) accepted to **ICRA 2024** -->
 
 <!-- - *2022.10*: Started PhD at [Robot Learning & Interaction group](https://idiap.ch/rli/)
 
@@ -86,5 +95,6 @@ I welcome the opportunity to listen to others and exchange ideas. Please feel fr
 
 # 🧭 Misc.
 
-- Outside research, I enjoy skiing，hiking and video games.
+- Outside of research, I enjoy skiing, playing video games, and spending time with my family.
+
 - I also serve as vice president of the [Association Suisse de Ski Chinoise](https://assc-ski.ch/).
