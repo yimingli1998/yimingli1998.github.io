@@ -39,7 +39,7 @@ International Conference on Learning Representations 2026 (ICLR 2026).
 
 International Journal of Robotics Research (IJRR).
 
-<span style="color:red;">Best Paper of the Season (2025~2026 Q3)</span>
+<span class="publication-award">Best Paper of the Season (2025-2026 Q3)</span>
 
 <a href="https://arxiv.org/pdf/2412.05197" class="btn btn--danger btn--small">paper</a>
 <a href="https://sites.google.com/view/geodf" class="btn btn--info btn--small">project</a>
@@ -74,7 +74,7 @@ IEEE Robotics and Automation Letters (RA-L).
 
 In Proc. Robotics: Science and Systems 2024 (RSS 2024).
 
-<span style="color:red;">Best Paper Award Finalist</span>
+<span class="publication-award">Best Paper Award Finalist</span>
 
 <a href="https://arxiv.org/pdf/2406.01137" class="btn btn--danger btn--small">paper</a>
 <a href="https://sites.google.com/view/cdfmp" class="btn btn--info btn--small">project</a>
